@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Awesome Project</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+      main{padding-top:70px;}
+      .container-fluid{
+
+      }
+      .navbar{
+        background:grey;
+        position:fixed;
+        top:0;
+        width:100%;
+        height:70px;
+        line-height:70px;
+        vertical-align:middle;
+        border-radius:0;
+      }
+      .navbar-nav li{
+        margin-right:10px;
+        padding-right:10px;
+      }
+
+      .search{
+        margin-left:auto;
+        margin-right: auto;
+      }
+      .search_tab{
+        box-shadow: 2px 2px 2px 2px;
+        border-radius: 15px;
+      }
+      .tab{
+
+      }
+      .conditionBtn{
+        background: none;
+        border: none;
+      }
+      .searchBtn{
+        background: none;
+        border: none;
+      }
+
+      .main_sample{
+
+      }
+      .list_div{
+        display: inline-table;
+      }
+      .imageBox img{
+        width: calc(30*1vw);
+        height: calc(0.6*30*1vw);
+        position: center;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      .textBox{
+        height: 65px;
+      }
+
+      .roundBox{
+        margin: 5px;
+        border-radius: 15px;
+        box-shadow: 1px 1px;
+      }
+
+      .link{
+        color:black;
+      }
+      .link:hover{
+        text-decoration: none;
+        color:black;
+      }
+      .linkInBlack{
+        color:white;
+      }
+      .linkInBlack:hover{
+        text-decoration: none;
+        color: white;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- 네비게이션바 -->
+    <header>
+      <nav class="navbar">
+        <div class="navigationbar">
+          <div class="navbar-header">
+            <a href="#" class="navbar-brand">Logo</a>
+          </div>
+          <div>
+            <ul class="nav navbar-nav navbar-right">
+              <!--메뉴-->
+              <li>Language</li>
+              <li>로그인</li>
+              <li>회원가입</li>
+              <li>검색</li>
+              <li>튜닝해보기</li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- 검색 -->
+    <div class="search" style="margin-top:100px;">
+      <form class="_3hmsj" action="/s/all" method="get" role="search">
+        <fieldset class="_2fg8rw">
+          <div role="tablist" aria-label="무엇을 찾고 계신가요?" class="tablist">
+            <label for="search-block-tab-true-STAYS" class="tab">
+              <input class="radio_btn" type="radio" id="search-block-tab-true-STAYS" data-testid="radio-tab-search-block-tab-true-STAYS" name="refinement_paths[]" role="tab" aria-selected="true" value="/homes" checked="">
+              <span class="radio_text" data-text="true">숙소</span>
+            </label>
+            <label for="search-block-tab-true-LONG_TERM_STAYS" class="tab">
+              <input class="radio_btn" type="radio" id="search-block-tab-true-LONG_TERM_STAYS" data-testid="radio-tab-search-block-tab-true-LONG_TERM_STAYS" name="refinement_paths[]" role="tab" aria-selected="false" value="/homes/lts">
+              <span class="radio_text" data-text="true">장기 숙박
+              </span>
+            </label>
+            <label for="search-block-tab-true-EXPERIENCES" class="tab">
+              <input class="radio_btn" type="radio" id="search-block-tab-true-EXPERIENCES" data-testid="radio-tab-search-block-tab-true-EXPERIENCES" name="refinement_paths[]" role="tab" aria-selected="false" value="/experiences">
+              <span class="radio_text" data-text="true">체험</span>
+            </label>
+            <a class="_1p3k2so" href="/s/experiences/online">온라인 체험</a>
+          </div>
+        </fieldset>
+          <div class="search_tab row">
+            <div class="col-sm-7">
+              <label class="_1qf01flu" for="bigsearch-query-attached-query">
+                <div class="_gor68n"><!--여행지 텍스트-->
+                  <div class="_tc18xig">위치</div>
+                  <input class="_1spzot3" aria-autocomplete="list" aria-expanded="false" autocomplete="off" autocorrect="off" spellcheck="false" id="bigsearch-query-attached-query" role="combobox" name="query" placeholder="어디로 여행가세요?" data-testid="structured-search-input-field-query" value="">
+                </div>
+              </label>
+            </div>
+            <div class="col-sm-3" style="text-align:center;">
+              <!--체크인 버튼-->
+              <button class="conditionBtn" aria-expanded="false" type="button" data-testid="structured-search-input-field-dates-button">
+                <div class="_3hmsj">
+                  <div class="_9bj9d5">체크인/체크아웃</div>
+                  <div class="_twinlf">날짜 추가</div>
+                </div>
+              </button>
+            </div>
+            <div class="col-sm-2" style="text-align:right;">
+              <!--검색버튼-->
+              <button data-testid="structured-search-input-search-button" type="submit" class="searchBtn">
+                  <img src="search_icon.png" alt="" style="display: block;width:12px;height:12px;">
+                  <span class="_3hmsj">검색</span>
+              </button>
+            </div>
+          </div>
+      </form>
+    </div>
+
+    <!-- 메인 -->
+    <main id="site-content" class="">
+      <div class="content-container">
+        <div style="min-height: 400px;">
+          <!-- 제목 -->
+          <div class="main_content" style="">
+            <section>
+              <h1 tabindex="-1" class="_14i3z6h"><span>가까운 여행지, 에어비앤비와 탐험해보세요.</span></h1>
+            </section>
+          </div>
+          <!-- 메인 -->
+          <div class="main_content" style="">
+            <div style="margin-top: 24px;"></div>
+            <div style="margin-top: 8px; margin-bottom: 8px;">
+              <ul class="main_sample" style="margin-left: -5px; margin-right: -5px;">
+                <li aria-hidden="false" data-key="0/.$/s/all?refinement_paths%5B%5D=0%2Fplaylists%2F40044&amp;search_type=0section_navigation" class="list_div" style="border-width: 0px 5px; max-width: 25%; flex: 0 0 25%;">
+                  <a href="/s/all?refinement_paths%5B%5D=%2Fplaylists%2F40044&amp;search_type=section_navigation" class="link">
+                    <div class="roundBox">
+                      <div class="imageBox">
+                        <picture>
+                          <img class="_1cb9q3xq" aria-hidden="true" alt="" decoding="async" src="https://a0.muscache.com/im/pictures/5924e9ef-fc40-439e-966a-1c76a634152a.jpg?im_w=720" data-original-uri="https://a0.muscache.com/pictures/5924e9ef-fc40-439e-966a-1c76a634152a.jpg" style="object-fit: cover;">
+                        </picture>
+                      </div>
+                      <div class="textBox">
+                        <div class="_ford54" title="가까운 여행지">가까운 여행지</div>
+                        <div class="_18va8m6" title="자동차로 금방 다녀올 수 있는 근교 여행지에서 휴식을 즐기세요.">자동차로 금방 다녀올 수 있는 근교 여행지에서 휴식을&nbsp;즐기세요.</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li aria-hidden="false" data-key="1/.$/s/experiences?refinement_paths%5B%5D=0%2Fexperiences%2FKG%2FTag%3A6951&amp;search_type=0section_navigation" class="list_div" style="border-width: 0px 5px; max-width: 25%; flex: 0 0 25%;">
+                  <a href="/s/experiences?refinement_paths%5B%5D=%2Fexperiences%2FKG%2FTag%3A6951&amp;search_type=section_navigation" class="link">
+                    <div class="roundBox">
+                      <div class="imageBox">
+                        <picture>
+                          <img class="_1cb9q3xq" aria-hidden="true" alt="" decoding="async" src="https://a0.muscache.com/im/pictures/7ee8ad00-0480-4b75-843f-1d2e4c01dde6.jpg?im_w=720" data-original-uri="https://a0.muscache.com/pictures/7ee8ad00-0480-4b75-843f-1d2e4c01dde6.jpg" style="object-fit: cover;">
+                        </picture>
+                      </div>
+                      <div class="textBox">
+                        <div class="_ford54" title="온라인 체험">온라인 체험</div>
+                        <div class="_18va8m6" title="세계 각지의 호스트가 보여주는 특별한 세상">세계 각지의 호스트가 보여주는 특별한&nbsp;세상</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li aria-hidden="false" data-key="2/.$/s/homes?refinement_paths[]=0homes/section/NEARBY_LISTINGS&amp;room_types[]=0Entire%20home%2Fapt&amp;title_type=0NEARBY_LISTINGS" class="list_div" style="border-width: 0px 5px; max-width: 25%; flex: 0 0 25%;">
+                  <a href="/s/homes?refinement_paths[]=homes/section/NEARBY_LISTINGS&amp;room_types[]=Entire%20home%2Fapt&amp;title_type=NEARBY_LISTINGS" class="link">
+                    <div class="roundBox">
+                      <div class="imageBox">
+                        <picture>
+                          <source srcset="https://a0.muscache.com/im/pictures/f8ec8dab-f5a4-423b-a81c-201f450d329d.jpg?im_w=480 1x, https://a0.muscache.com/im/pictures/f8ec8dab-f5a4-423b-a81c-201f450d329d.jpg?im_w=1200 2x, https://a0.muscache.com/im/pictures/f8ec8dab-f5a4-423b-a81c-201f450d329d.jpg?im_w=1680 3x" media="(min-width: 1440px)">
+                          <img class="_1cb9q3xq" aria-hidden="true" alt="" decoding="async" src="https://a0.muscache.com/im/pictures/f8ec8dab-f5a4-423b-a81c-201f450d329d.jpg?im_w=720" data-original-uri="https://a0.muscache.com/pictures/f8ec8dab-f5a4-423b-a81c-201f450d329d.jpg" style="object-fit: cover;">
+                        </picture>
+                      </div>
+                      <div class="textBox">
+                        <div class="_ford54" title="나만의 공간">나만의 공간</div>
+                        <div class="_18va8m6" title="일행만을 위한 편안한 공간에서 친구 및 가족과 오붓한 시간을 보내세요.">일행만을 위한 편안한 공간에서 친구 및 가족과 오붓한 시간을&nbsp;보내세요.</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li aria-hidden="false" data-key="3/.$/s/homes?refinement_paths%5B%5D=0%2Fhomes%2Fsection%2FNEARBY_LONG_TERM_STAY_LISTINGS&amp;search_type=0section_navigation" class="list_div" style="border-width: 0px 5px; max-width: 25%; flex: 0 0 25%;">
+                  <a href="/s/homes?refinement_paths%5B%5D=%2Fhomes%2Fsection%2FNEARBY_LONG_TERM_STAY_LISTINGS&amp;search_type=section_navigation" class="link">
+                    <div class="roundBox">
+                      <div class="imageBox">
+                        <picture>
+                          <img class="_1cb9q3xq" aria-hidden="true" alt="" decoding="async" src="https://a0.muscache.com/im/pictures/99ff3081-68b9-4e2b-801f-0ab9767eaa81.jpg?im_w=720" data-original-uri="https://a0.muscache.com/pictures/99ff3081-68b9-4e2b-801f-0ab9767eaa81.jpg" style="object-fit: cover;">
+                        </picture>
+                      </div>
+                      <div class="textBox">
+                        <div class="_ford54" title="장기 숙박">장기 숙박</div>
+                        <div class="_18va8m6" title="한 달 이상 장기 숙박할 숙소를 에어비앤비에서 찾아보세요.">한 달 이상 장기 숙박할 숙소를 에어비앤비에서&nbsp;찾아보세요.</div>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 온라인체험 -->
+          <div class="main_content" style="">
+            <div>
+              <div class="_b1xn3a" style="background-color: rgb(0, 0, 0);">
+                <div class="_1sx1020z">
+                  <section>
+                    <div class="_e615pd">
+                      <h1 tabindex="-1" class="_14i3z6h"><div class="_1nfboho">온라인 체험</div></h1>
+                      <div class="_166yo8j">세계 각지의 사람들을 만나 새로운 경험을 해보세요.개성 있는 호스트가 진행하는 실시간 영상 세션을 통해 이제 집에서도 안전하게 체험을 즐기실 수 있습니다.</div>
+                      <a href="/s/experiences?click_referer=t%3ASEE_ALL%7Csid%3A214251eb-1b78-4b7f-85e8-cc0eb4716f67%7Cst%3ADEFAULT_EARHART_INSERT_ITEM_SECTION&amp;refinement_paths%5B%5D=%2Fexperiences%2FKG%2FTag%3A6951&amp;last_search_session_id=214251eb-1b78-4b7f-85e8-cc0eb4716f67&amp;search_type=unknown" class="_oovy7hf">모두 둘러보기</a>
+                    </div>
+                  </section>
+                  <div class="_1exn5ob">
+                    <div class="_1236fxm" style="grid-template-columns: 1fr 1fr 1fr 1fr;">
+                      <div class="_59mwg2">
+                        <a target="_blank" href="/experiences/1691219" class="linkInBlack">
+                          <div class="roundBox">
+                            <picture>
+                              <img class="_1cb9q3xq" aria-hidden="true" alt="" decoding="async" src="https://a0.muscache.com/im/pictures/d3fafe53-6348-4dcb-b778-e6724eb25a4a.jpg?im_w=720" data-original-uri="https://a0.muscache.com/im/pictures/d3fafe53-6348-4dcb-b778-e6724eb25a4a.jpg?aki_policy=large" style="object-fit: cover; border-radius: 16px;">
+                            </picture>
+                            <div class="_1qb7qc8">
+                              <div style="width: 50%;">볼티모어의 '식물 닥터'에게서 식물 번식법을 배워보세요.</div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="_59mwg2">
+                        <a target="_blank" href="/experiences/1658424" class="linkInBlack">
+                          <div class="roundBox">
+                              <picture>
+                                <img class="_1cb9q3xq" aria-hidden="true" alt="" decoding="async" src="https://a0.muscache.com/im/pictures/5bf46c77-4312-41b6-b9ad-66db5bbadd27.jpg?im_w=720" data-original-uri="https://a0.muscache.com/im/pictures/5bf46c77-4312-41b6-b9ad-66db5bbadd27.jpg?aki_policy=large" style="object-fit: cover; border-radius: 16px;">
+                              </picture>
+                            <div class="_1qb7qc8">
+                              <div style="width: 100%;">스트레칭을 하고, 호흡을 가다듬고, 긴장을 풀어보세요. 친구와 함께하는 요가&nbsp;클래스.</div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="_59mwg2">
+                        <a target="_blank" href="/experiences/673724" class="linkInBlack">
+                          <div class="roundBox">
+                            <picture>
+                              <img class="_1cb9q3xq" aria-hidden="true" alt="" decoding="async" src="https://a0.muscache.com/im/pictures/5bd2705a-a565-426e-b928-f2a2b581e717.jpg?im_w=720" data-original-uri="https://a0.muscache.com/im/pictures/5bd2705a-a565-426e-b928-f2a2b581e717.jpg?aki_policy=large" style="object-fit: cover; border-radius: 16px;">
+                            </picture>
+                            <div class="_1qb7qc8">
+                              <div style="width: 100%;">암스테르담에 사는 제니스와 함께 음악을 들으며 명상하기</div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="_59mwg2">
+                        <a target="_blank" href="/experiences/1659111" class="linkInBlack">
+                          <div class="roundBox">
+                            <picture>
+                              <img class="_1cb9q3xq" aria-hidden="true" alt="" decoding="async" src="https://a0.muscache.com/im/pictures/af46112a-b342-45bb-89b0-57fce44e110c.jpg?im_w=720" data-original-uri="https://a0.muscache.com/im/pictures/af46112a-b342-45bb-89b0-57fce44e110c.jpg?aki_policy=large" style="object-fit: cover; border-radius: 16px;">
+                            </picture>
+                            <div class="_1qb7qc8">
+                              <div style="width: 50%;">존과 함께 그림 그리며 아프리카 펭귄에게 도움의 손길 보내기</div>
+                            </div>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="_mfyloj">
+                    <a href="/s/experiences?click_referer=t%3ASEE_ALL%7Csid%3A214251eb-1b78-4b7f-85e8-cc0eb4716f67%7Cst%3ADEFAULT_EARHART_INSERT_ITEM_SECTION&amp;refinement_paths%5B%5D=%2Fexperiences%2FKG%2FTag%3A6951&amp;last_search_session_id=214251eb-1b78-4b7f-85e8-cc0eb4716f67&amp;search_type=unknown" class="_oovy7hf">모두 둘러보기</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 최신정보 -->
+          <div class="main_content" style="">
+            <div>
+              <div style="width: 100%; background-color: rgb(247, 247, 247);">
+                <div class="_1sx1020z" style="background-color: transparent;">
+                  <section class="_yb2czz" style="background-color: rgb(247, 247, 247);">
+                    <h1 tabindex="-1" class="_14i3z6h"><span class="_1sgsqic">최신 정보 확인하기</span></h1>
+                    <div class="_xtucal8">
+                      <section class="_xvi7e3">
+                        <h2 tabindex="-1" class="_14i3z6h">
+                          <div class="_1enxi9s">게스트를 위한 정보</div>
+                        </h2>
+                        <a class="_hvb9xj" href="https://www.airbnb.co.kr/covid" target="_blank" rel="noopener noreferrer" data-no-client-routing="true">
+                          <span class="_11oyobo"><b>여행 관련 업데이트</b></span>
+                          <span class="_1hfs4qi6">알아두어야 할 사항</span>
+                        </a>
+                        <a class="_hvb9xj" href="https://www.airbnb.co.kr/help/article/2701/extenuating-circumstances-policy-and-the-coronavirus-covid19" target="_blank" rel="noopener noreferrer" data-no-client-routing="true">
+                          <span class="_11oyobo"><b>예약 취소&nbsp;옵션</b></span>
+                          <span class="_1hfs4qi6">취소 가능 대상 및 환불 범위&nbsp;알아보기</span>
+                        </a>
+                        <a class="_hvb9xj" href="https://www.airbnb.co.kr/help" target="_blank" rel="noopener noreferrer" data-no-client-routing="true">
+                          <span class="_11oyobo"><b>도움말 센터</b></span>
+                          <span class="_1hfs4qi6">필요한 도움받기</span>
+                        </a>
+                      </section>
+                      <section class="_xvi7e3">
+                        <h2 tabindex="-1" class="_14i3z6h"><div class="_1enxi9s">호스트를 위한 정보</div></h2>
+                        <a class="_hvb9xj" href="https://www.airbnb.co.kr/host-message" target="_blank" rel="noopener noreferrer" data-no-client-routing="true">
+                          <span class="_11oyobo"><b>브라이언 체스키 CEO의&nbsp;메시지</b></span>
+                          <span class="_1hfs4qi6">에어비앤비 CEO의 영상 메시지&nbsp;보기</span>
+                        </a>
+                        <a class="_hvb9xj" href="https://www.airbnb.co.kr/covid" target="_blank" rel="noopener noreferrer" data-no-client-routing="true">
+                          <span class="_11oyobo"><b>호스팅에 도움이 되는&nbsp;자료</b></span>
+                          <span class="_1hfs4qi6">코로나19로 인한&nbsp;영향</span>
+                        </a>
+                        <a class="_hvb9xj" href="https://www.airbnb.co.kr/covid19relief" target="_blank" rel="noopener noreferrer" data-no-client-routing="true">
+                          <span class="_11oyobo"><b>구호 인력을 위한 숙소&nbsp;제공하기</b></span>
+                          <span class="_1hfs4qi6">구호 인력 지원 방법&nbsp;알아보기</span>
+                        </a>
+                      </section>
+                      <section class="_kqaf52j">
+                        <h2 tabindex="-1" class="_14i3z6h"><div class="_1enxi9s">코로나19 구호 인력을 위한 정보</div></h2>
+                        <a class="_hvb9xj" href="https://www.airbnb.co.kr/openhomes/covid19relief" target="_blank" rel="noopener noreferrer" data-no-client-routing="true">
+                          <span class="_11oyobo"><b>구호 인력을 위한&nbsp;숙소</b></span>
+                          <span class="_1hfs4qi6">프로그램에 대해&nbsp;알아보기</span>
+                        </a>
+                        <a class="_hvb9xj" href="https://www.airbnb.co.kr/covid19relief-guests" target="_blank" rel="noopener noreferrer" data-no-client-routing="true">
+                          <span class="_11oyobo"><b>숙소 신청</b></span>
+                          <span class="_1hfs4qi6">숙소 옵션&nbsp;확인하기</span>
+                        </a>
+                        <a class="_hvb9xj" href="https://www.airbnb.co.kr/openhomes/covid19relief/donate?ref=homepage_covid19relief" target="_blank" rel="noopener noreferrer" data-no-client-routing="true">
+                          <span class="_11oyobo"><b>기부하기</b></span>
+                          <span class="_1hfs4qi6">비영리 단체&nbsp;지원하기</span>
+                        </a>
+                      </section>
+                      <section class="_kqaf52j">
+                        <h2 tabindex="-1" class="_14i3z6h"><div class="_1enxi9s">기타</div></h2>
+                        <a class="_hvb9xj" href="https://news.airbnb.com/ko" target="_blank" rel="noopener noreferrer" data-no-client-routing="true">
+                          <span class="_11oyobo"><b>에어비앤비 뉴스룸</b></span>
+                          <span class="_1hfs4qi6">최근 발표한&nbsp;사항</span>
+                        </a>
+                        <a class="_hvb9xj" href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank" rel="noopener noreferrer" data-no-client-routing="true">
+                          <span class="_11oyobo"><b>세계보건기구</b></span>
+                          <span class="_1hfs4qi6">관련 정보 및&nbsp;업데이트</span>
+                        </a>
+                      </section>
+                      <span class="_1oycuvc"></span>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 하단부 -->
+    <footer>
+      <div class="_fyxf74">
+        <!-- 소개 -->
+        <section class="_1l3ys1i">
+          <h4 class="_tfslnm">소개</h4>
+          <ul class="_yuolfv">
+            <li class="_wmuyow">
+              <a href="/diversity" class="_o06542u">다양성 및 소속감</a>
+            </li>
+            <li class="_wmuyow">
+              <a href="/accessibility" class="_o06542u">접근성</a>
+            </li>
+            <li class="_wmuyow">
+              <a href="/trust" class="_o06542u">신뢰와 안전</a>
+            </li>
+            <li class="_wmuyow">
+              <a rel="noopener noreferrer" target="_blank" href="https://www.airbnbcitizen.com/?utm_source=airbnb&amp;utm_medium=footer&amp;utm_campaign=product" class="_o06542u">Airbnb Citizen</a>
+            </li>
+            <li class="_wmuyow">
+              <a href="/d/olympics" class="_o06542u">올림픽</a>
+            </li>
+            <li class="_wmuyow">
+              <a href="/press/news" class="_o06542u">뉴스룸</a>
+            </li>
+          </ul>
+        </section>
+        <!-- 커뮤니티 -->
+        <section class="_1l3ys1i">
+          <h4 class="_tfslnm">커뮤니티</h4>
+          <ul class="_yuolfv">
+            <li class="_wmuyow">
+              <a href="/magazine" class="_o06542u">에어비앤비 매거진</a>
+            </li>
+            <li class="_wmuyow">
+              <a href="/associates?from=footer" class="_o06542u">에어비앤비 어소시에이트</a>
+            </li>
+            <li class="_wmuyow">
+              <a href="/work?s=footer" class="_o06542u">에어비앤비 비즈니스 프로그램</a>
+            </li>
+            <li class="_wmuyow">
+              <a href="/invite?r=6" class="_o06542u">친구 초대하기</a>
+            </li>
+            <li class="_wmuyow">
+              <a href="/careers" class="_o06542u">채용정보</a>
+            </li>
+          </ul>
+        </section>
+        <!-- 호스팅하기 -->
+        <section class="_1l3ys1i">
+          <h4 class="_tfslnm">호스팅하기</h4>
+          <ul class="_yuolfv">
+            <li class="_wmuyow">
+              <a href="/host/homes?from_footer=1" class="_o06542u">숙소 호스팅</a>
+            </li>
+            <li class="_wmuyow">
+              <a href="/d/onlinehost" class="_o06542u">온라인 체험 호스팅하기</a>
+            </li>
+            <li class="_wmuyow">
+              <a href="/host-message" class="_o06542u">브라이언 체스키 CEO의 메시지</a>
+            </li>
+            <li class="_wmuyow">
+              <a href="/help/responsible-hosting" class="_o06542u">책임감 있는 호스팅</a>
+            </li>
+            <li class="_wmuyow">
+              <a href="/openhomes?from_footer=1" class="_o06542u">Open Homes</a>
+            </li>
+            <li class="_wmuyow">
+              <a href="/resources" class="_o06542u">자료 센터</a>
+            </li>
+            <li class="_wmuyow">
+              <a href="/help/community?s=footer" class="_o06542u">커뮤니티 센터</a>
+            </li>
+          </ul>
+        </section>
+        <!-- 지원 -->
+        <section class="_1l3ys1i">
+          <h4 class="_tfslnm">에어비앤비 지원</h4>
+          <ul class="_yuolfv">
+            <li class="_wmuyow">
+              <a href="/covid" class="_o06542u">코로나19 관련 업데이트</a>
+            </li>
+            <li class="_wmuyow">
+              <a href="/help?from=footer" class="_o06542u">도움말 센터</a>
+            </li>
+            <li class="_wmuyow">
+              <a href="/help/article/2701/extenuating-circumstances-policy-and-the-coronavirus-covid19" class="_o06542u">예약 취소 옵션</a>
+            </li>
+            <li class="_wmuyow">
+              <a href="/neighbors" class="_o06542u">에어비앤비 이웃 민원 지원</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="">
+        <!-- 언어선택 -->
+        <div class="_jro6t0">
+          <a data-no-client-routing="true" href="/account-settings/language" class="_1kejnocv">
+            <span class="_14tkmhr">
+              <img src="language_icon.png" alt="" style="float:left;height:16px;width:16px;">
+              <span class="_bjxj6b">한국어 (KR)</span>
+            </span>
+          </a>
+        </div>
+
+        <!-- 연락처 -->
+        <div class="_2ms5qb">
+          <ul class="_115qwnm">
+            <li class="_kdkpwk">
+              <a rel="noopener noreferrer" target="_blank" href="https://github.com/ChoHJin/WebProject-AWESOME-" class="_s7cvp1u"><img src="github_icon.png" alt="깃허브로 이동하기" style="width:18px;height:18px;">
+              </a>
+            </li>
+            <li class="_kdkpwk">
+              <a rel="noopener noreferrer" target="_blank" href="https://console.firebase.google.com/u/0/project/awesome-19ca7/database/firestore/data~2Fboard~2FUWRRIM9VoQF0HQ6Bo2GM" class="_s7cvp1u"><img src="firebase_icon.png" alt="파이어베이스로 이동하기" style="width:18px;height:18px;">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 저작권 + 약관 -->
+        <div class="">
+          <div class="">
+            © 2020 Awesome, Inc.All rights reserved
+          </div>
+          <div class="">
+            <a href="#">개인정보 처리방침</a>
+            <span>·</span>
+            <a href="#">이용약관</a>
+            <span>·</span>
+            <a href="#">사이트맵</a>
+            <span>·</span>
+            <a href="#">환불정책</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
