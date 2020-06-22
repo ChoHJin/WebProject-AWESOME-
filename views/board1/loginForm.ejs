@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>board sample for firebase (Auth)</title>
+        <link rel='stylesheet' href='../../public/stylesheets/style.css' />
+    </head>
+
+    <body>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Test & MySite</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+
+        <div id ="main">
+            <form name = "form1" action="loginChk", method="POST">
+                <table border = "1", style="width:600px">
+                    <colgroup>
+                        <col width ='15%'/>
+                        <cl width="*%" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td>ID</td>
+                            <td><input type="text" name="id" size="20" maxlength="20"></td>
+                        </tr>
+                        <tr>
+                            <td>Password</td>
+                            <td><input type="password" name="passwd" size="20" maxlength="20"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#" onclick="form1.submit()">Email Login</a>
+                <input type="button" id="liGoogleBtn" value="Google Login">
+            </form>
+        </div>
+
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyCSlJebGWkCblHmgDlvjn4ulO4NiyD1vUM",
+            authDomain: "awesome-19ca7.firebaseapp.com",
+            // projectId: "awesome-19ca7",
+            // appId: "1:90912165169:web:add6f2090e04e3971c3410",
+            // measurementId: "G-0HVLWXR26R"
+        };
+        firebase.initializeApp(firebaseConfig);
+        var gmail = document.getElementById("liGoogleBtn");
+                gmail.addEventListener('click', e=> {
+                    var provider = new firebase.auth.GoogleAuthProvider();
+
+                    firebase.auth().signInWithPopup(provider).then(function(result) {
+                        var token = result.credential.accessToken;
+
+                        var user = result.user;
+
+                        console.log("Token : " + token + " user : " + user);
+                        console.log("구글 로그인 완료");
+                    }).catch(function(err) {
+                console.log(err);
+                });
+            });
+
+    </script>
+    </body>
+</html>

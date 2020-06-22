@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://gongim.com/korean/page/sub2_1.asp -->
+<html lang="ko" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+	<title> 공임나라 국산차정비</title>
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="카센터창업,타이밍벨트,미션오일,자동차공임나라,오일필터,교환나라,공임나라홈페이지,공임나라,공임 나라,rhddlaskfk"><meta property="og:keywords" content="자동차정비,공임나라,현대자동차정비,기아자동차정비,쌍용차정비,수입차정비,차량정비,엔진플러싱,타이어교환,교환나라,이벤트">
+
+<link rel="shortcut icon" href="https://gongim.com/img/favicon.ico" type="image/x-icon">
+<link rel="icon" href="https://gongim.com/img/favicon.ico" type="image/x-icon">
+<!-- 파비콘 추가 -->
+
+<link rel="stylesheet" type="text/css" href="./공임나라 국산차정비_files/styles.css" media="all">
+<link rel="stylesheet" type="text/css" href="./공임나라 국산차정비_files/jquery.fancybox.css" media="all">
+<link href="./공임나라 국산차정비_files/jquery.selectbox.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./공임나라 국산차정비_files/global.css">
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="../css/ie.css" media="all">
+<script type="text/javascript" src="../js/html5shiv.js"></script>
+<![endif]-->
+<script async="" src="./공임나라 국산차정비_files/analytics.js.다운로드"></script><script type="text/javascript" src="./공임나라 국산차정비_files/default.js.다운로드"></script>
+<script type="text/javascript" src="./공임나라 국산차정비_files/jquery.fancybox.js.다운로드"></script>
+<script type="text/javascript" src="./공임나라 국산차정비_files/bxSlider.min.js.다운로드"></script>
+<script type="text/javascript" src="./공임나라 국산차정비_files/action.js.다운로드"></script>
+<script type="text/javascript" src="./공임나라 국산차정비_files/functions.js.다운로드"></script>
+<script type="text/javascript" src="./공임나라 국산차정비_files/script.js.다운로드"></script>
+<script type="text/javascript" src="./공임나라 국산차정비_files/wrest.js.다운로드"></script>
+<script type="text/javascript" src="./공임나라 국산차정비_files/boardControl.js.다운로드"></script>
+<script type="text/javascript" src="./공임나라 국산차정비_files/link.js.다운로드"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-89470862-1', 'auto');
+  ga('send', 'pageview');
+
+	$(document).ready(function(){
+		var tcnt = $("#top_ad").length;
+		if(tcnt > 0){
+			var ttxt = $("#top_ad").html();
+			//alert(ttxt);
+			txt = trim(ttxt);
+			if(!txt){
+				$("#top_ad").css({'height':'0'});
+			}
+		}
+	});
+	function trim(s) {
+		s += ''; // 숫자라도 문자열로 변환
+		return s.replace(/^\s*|\s*$/g, '');
+	}
+</script>
+<script async="" src="./공임나라 국산차정비_files/f.txt"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-6951186561829915",
+    enable_page_level_ads: true
+  });
+</script>
+
+<script type="text/javascript" src="./공임나라 국산차정비_files/jquery.ulslide.js.다운로드"></script>
+<script language="javascript" id="resultProc"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	navFocus('lnb', 1);
+	$("input[name='searchstr']").keypress(function(e) {
+		if (e.keyCode === 13) {
+			$("#submit").trigger("click");
+			return false;
+		}
+	});
+
+
+	$("#areaID td").on("click", function(){
+		var bb = "";
+		$("ul.row4 > li > input").each(function(index){
+			if($("ul.row4 > li > input").eq(index).is(":checked")){
+				bb = bb +"&"+ $("ul.row4 > li > input").eq(index).attr("name") + "="+$("ul.row4 > li > input").eq(index).val();
+			}
+		});
+		var aidx = $(this).attr("attr");
+		if (aidx != "0"){
+			changeareaData(aidx);
+			//$("select[name='areaidx'] option[value="+aidx+"]").attr("selected","selected");
+			$("select[name='areaidx']").val(aidx);
+			$("input[name='searchstr']").val("");
+
+			$("#areaID td").removeClass("on").removeClass("bg");
+			$(this).addClass("on");
+			var url = "/global_page/get_idx_level2.asp";
+			var param = "areaidx="+aidx+"&root_info_code=|1|"+bb;
+			$.ajax({
+				url : url,
+				data : param,
+				type : "POST",
+				success : function(data){
+					var tmp = data.split("@@");
+					$("#ajax_get_idx_content").html(tmp[0]);
+					$("#ajax_get_idx_page").html(tmp[1]);
+				},
+				error : function(){
+					alert('error !!');
+				}
+			});
+		}
+	});
+	$("#submit").on("click", function(){
+		var f = $("#areaFrm");
+		var params = f.serialize();
+		var url = "/global_page/get_idx_level2.asp";
+		var param = params+"&root_info_code=|1|";
+		var areaidx = $("select[name='areaidx'] option:selected").val();
+		$("#areaID td").removeClass("on").removeClass("bg");
+		if(areaidx != ""){
+			$("#areaID td").each(function(index){
+				var attr = $("#areaID td").eq(index).attr("attr");
+				if(attr == areaidx){
+					$("#areaID td").eq(index).addClass("on");
+				}
+			});
+		}
+		$.ajax({
+			url : url,
+			data : param,
+			type : "POST",
+			success : function(data){
+				var tmp = data.split("@@");
+				$("#ajax_get_idx_content").html(tmp[0]);
+				$("#ajax_get_idx_page").html(tmp[1]);
+			},
+			error : function(){
+				alert('error !!');
+			}
+		});
+	});
+	$("ul.row4 > li > input").on("click", function(){
+		var aa = "";
+		var aidx = "";
+		$("#areaID td").each(function(index){
+			if($("#areaID td").eq(index).hasClass("on") == true){
+				aidx = $("#areaID td").eq(index).attr("attr");
+			}
+		});
+		$("ul.row4 > li > input").each(function(index){
+			if($("ul.row4 > li > input").eq(index).is(":checked")){
+				if (aa==""){
+					aa = $("ul.row4 > li > input").eq(index).attr("name") + "="+$("ul.row4 > li > input").eq(index).val();
+				}else{
+					aa = aa +"&"+ $("ul.row4 > li > input").eq(index).attr("name") + "=" +$("ul.row4 > li > input").eq(index).val();
+				}
+			}
+		});
+		if (aa == "") aa = "1=1";
+		var url = "/global_page/get_idx_level2.asp";
+		var param = aa+"&root_info_code=|1|&areaidx="+aidx;
+		$.ajax({
+			url : url,
+			data : param,
+			type : "POST",
+			success : function(data){
+				var tmp = data.split("@@");
+				$("#ajax_get_idx_content").html(tmp[0]);
+				$("#ajax_get_idx_page").html(tmp[1]);
+			},
+			error : function(){
+				alert('error !!');
+			}
+		});
+	});
+  $('#main_bn').ulslide({
+      statusbar: true,
+      width: 740,
+      affect: 'slide',
+      axis: 'y',
+      navigator: '#main_bn_bt a',
+      duration: 400,
+			autoslide: 3000
+  });
+});
+function changeareaData(val){
+	//var f=document.areaFrm;
+	//srcz = "/common/changeareaData.asp?areaidx="+f.areaidx.value;
+	//resultProc.src=srcz;
+	var url = "/common/ajax_changeareaDataForm.asp";
+	var param = "areaidx="+val+"&idx=lccode";
+	$.ajax({
+		url : url,
+		data : param,
+		type : "post",
+		success : function(data){
+			$("#lccode").html(data);
+		},
+		error : function(){
+			alert('error');
+		}
+	});
+}
+</script>
+        <style type="text/css">
+
+			#wrap2{position:relative;}
+
+            #main_bn_bt {
+                list-style-type:none;
+				position:absolute;
+				bottom:5px; left:150px;
+            }
+
+            #main_bn_bt li {
+                float: left;color:#fff;padding:0 0 3px 0;margin:3px;
+            }
+
+			a, a:hover, a:visited{text-decoration:none; color:#333;font-size:11px;}
+
+        </style>
+<!-- 슬라이드배너스크립트시작 -->
+<script type="text/javascript">
+<!--
+function resizeIFrame(iframeId)
+{
+    try {
+        var innerBody = iframeId.contentWindow.document.body;
+        var innerHeight = innerBody.scrollHeight + (innerBody.offsetHeight - innerBody.clientHeight);
+
+        if(iframeId.style.height != innerHeight) {
+            iframeId.style.height = innerHeight;
+        }
+        if(document.all) {
+            innerBody.attachEvent('onclick',parent.do_resize);
+            innerBody.attachEvent('onkeyup',parent.do_resize);
+        }
+        else {
+            innerBody.addEventListener("click", parent.do_resize, false);
+            innerBody.addEventListener("keyup", parent.do_resize, false);
+        }
+    }
+    catch (e) {
+    }
+}
+//-->
+</script>
+<!-- 슬라이드배너스크립트끝 -->
+<title>공임나라 국산차 가맹점찾기</title>
+<style type="text/css">.fancybox-margin{margin-right:17px;}</style></head>
+<body>
+<div id="body_layer" onclick="layer._close();"></div>
+<div id="top_ad" style="">
+    <div class="inner"><a href="https://cafe.naver.com/gongimnara0/" target="_blank"><img src="./공임나라 국산차정비_files/상단-레이어배너-배터리-좌측-카페-11.png" alt=""></a><a href="https://www.gongim.com/korean/page/sub3_2.asp" target=""><img src="./공임나라 국산차정비_files/상단-레이어배너-우측1.png" alt=""></a><a href="https://gongim.com/korean/page/sub2_1.asp#" class="close" onclick="$(&#39;#top_ad&#39;).stop().slideUp(100,&#39;linear&#39;); return false;"></a></div>
+</div>
+
+<div class="header_wrap">
+	<header id="header">
+		<h1 id="logo">
+			<a href="https://gongim.com/korean/"><div style="float:left;"><img src="./공임나라 국산차정비_files/logo_l.png" alt="자동차 공임나라"></div> <div class="lang"><em>국산차정비</em></div></a>
+			<div class="logo_side">부품구입은 저렴한 인터넷, 장착은 합리적인 공임나라</div>
+		</h1>
+		<div class="header_top_wrap">
+			
+<ul id="global">
+  <li class="on"><a href="https://gongim.com/korean/">국산차정비</a></li>
+  <li><a href="https://gongim.com/global/">수입차정비</a></li>
+  <li><a href="https://gongim.com/tire/">교환나라</a></li>
+  <li><a href="https://gongim.com/industry/">네비/블박</a></li>
+  <li><a href="https://gongim.com/external/">외장관리</a></li>
+  <li><a href="https://www.carsuda.co.kr/">카수다</a></li>
+  <li><a href="https://gongim.com/point_mall/" class="point">포인트몰</a></li>
+
+  <!--li ><a href="/point_mall/">쇼핑몰</a></li-->
+</ul>
+			<div id="addFavorite2">
+				<a href="javascript:addFavorite(&#39;http://gongim.com/korean/main/main.asp&#39;,&#39;공임나라 국산차&#39;)"><img src="./공임나라 국산차정비_files/icon_addfavorite.gif" alt="즐겨찾기 추가"> 즐겨찾기 추가</a>
+			</div>
+		</div>
+		<div id="addFavorite">
+			<!--p>현재 접속인원<b>787</b> 명</p-->
+		</div>
+		<nav id="nav">
+			<div class="inner">
+				<ul class="gnb">
+					<li><a href="https://gongim.com/korean/page/sub1_2.asp">공임나라</a>
+						<div class="snb">
+							<ul>
+								<li><a href="https://gongim.com/korean/page/sub1_2.asp">회사소개</a></li>
+								<li><a href="https://gongim.com/korean/page/sub1_3.asp">서비스개요</a></li>
+								<li><a href="https://gongim.com/korean/page/sub1_5.asp">협력점절차</a></li>
+								<li><a href="https://gongim.com/korean/page/sub1_1.asp?mode=view&amp;storeidx=&amp;serboardsort=&amp;page=1&amp;idx=35376&amp;search=&amp;searchstr=&amp;bbsidx=">이용안내</a></li>
+								<!-- <li><a href="../page/sub5_9.asp">최신글리스트</a></li> -->
+							</ul>
+						</div>
+					</li>
+					<li><a href="https://gongim.com/korean/page/sub2_1.asp">전국지점</a>
+						<div class="snb">
+							<ul>
+								<li><a href="https://gongim.com/korean/page/sub2_1.asp">가맹점찾기</a></li>
+								<li><a href="https://gongim.com/korean/page/sub2_2.asp">협력점찾기</a></li>
+								<li><a href="https://gongim.com/korean/page/sub2_3.asp">셀프정비소</a></li>
+								<li><a href="https://gongim.com/korean/page/sub2_4.asp">우수협력점</a></li>
+								<li><a href="https://gongim.com/korean/page/sub2_5.asp">신규협력점</a></li>
+								<li><a href="https://gongim.com/korean/page/board_list.asp?bbsidx=20">지점갤러리</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="https://gongim.com/korean/page/sub3_1.asp">정비공임</a>
+						<div class="snb">
+							<ul>
+								<li><a href="https://gongim.com/korean/page/sub3_1.asp">표준공임</a></li>
+								<!--li><a href="../page/sub3_5.asp">예상견적</a></li-->
+								<li><a href="https://gongim.com/korean/page/sub3_3.asp">필터가격</a></li>
+								<li><a href="https://gongim.com/korean/page/sub3_4.asp">차량제원</a></li>
+								<li><a href="https://gongim.com/korean/page/board_list.asp?bbsidx=18">정비상담</a></li>
+								<li><a href="https://gongim.com/korean/page/board_list.asp?bbsidx=19">정비후기</a></li>
+								<li><a href="https://gongim.com/korean/page/board_list.asp?bbsidx=4">정비갤러리</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="https://gongim.com/korean/page/sub3_2.asp">이벤트</a>
+						<div class="snb">
+							<ul>
+								<li><a href="https://gongim.com/korean/page/sub3_2.asp">원스톱패키지</a></li>
+								<li><a href="https://gongim.com/korean/page/board_list.asp?bbsidx=7">지점이벤트</a></li>
+								<li><a href="https://gongim.com/korean/page/board_list.asp?bbsidx=158">제휴이벤트</a></li>
+								<!-- <li><a href="../page/sub4_3.asp">포인트몰</a></li> -->
+								<!-- <li><a href="../page/sub4_4.asp">이벤트요청</a></li> -->
+								<!-- <li><a href="../page/sub4_5.asp">이벤트후기</a></li> -->
+							</ul>
+						</div>
+					</li>
+					<li><a href="https://gongim.com/korean/page/sub6_1.asp">제휴업체</a>
+						<div class="snb">
+							<ul>
+								<li><a href="https://gongim.com/korean/page/board_list.asp?bbsidx=32">자동차부품</a></li>
+								<li><a href="https://gongim.com/korean/page/board_list.asp?bbsidx=33">공구/장비</a></li>
+								<li><a href="https://gongim.com/korean/page/board_list.asp?bbsidx=34">타이어/휠/용품</a></li>
+								<li><a href="https://gongim.com/korean/page/board_list.asp?bbsidx=35">중고/재생</a></li>
+								<li><a href="https://gongim.com/korean/page/board_list.asp?bbsidx=38">렌터카/중고차</a></li>
+								<li><a href="https://gongim.com/korean/page/board_list.asp?bbsidx=39">블로그/카페</a></li>
+								<li><a href="https://gongim.com/korean/page/sub6_7.asp">제휴문의</a></li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<a href="https://gongim.com/korean/page/sub1_1.asp">고객센터</a>
+						<div class="snb">
+							<ul>
+								<!-- <li><a href="../page/sub5_1.asp">출석부</a></li> -->
+								<li><a href="https://gongim.com/korean/page/sub1_1.asp">공지사항</a></li>
+								<li><a href="https://gongim.com/korean/page/sub1_4.asp">자주하는 질문</a></li>
+								<li><a href="https://gongim.com/korean/page/sub1_7.asp">고객의소리</a></li>
+								<li><a href="https://gongim.com/korean/page/sub6_7.asp">제휴문의</a></li>
+								
+							</ul>
+						</div>
+					</li>
+					<li><a href="http://www.carsuda.co.kr/">커뮤니티</a>
+						<!-- <div class="snb">
+							<ul>
+								<li><a href="../page/sub5_2.asp">가입인사</a></li>
+								<li><a href="../page/sub5_3.asp">자유게시판</a></li>
+								<li><a href="../page/sub5_4.asp">통합QnA</a></li>
+							</ul>
+						</div> -->
+					</li>
+	<li class="last"><a href="javascript:void(0);">지점전용</a>
+					</li>
+				</ul>
+				<div class="search">
+					<form id="search_Frm">
+					<input type="text" class="text required" required="" name="Searchstr" id="Searchstr" value="" placeholder="검색어를 입력하세요">
+					<button type="submit" class="submit" id="s_submit"><i class="fa fa-search"></i></button>
+				  </form>
+				</div>
+			</div>
+		</nav>
+	</header>
+</div>
+<script>
+	$(document).ready(function(){
+		$("#search_Frm #s_submit").click(function(){
+			f = $("#search_Frm");
+			var Searchstr = $("input[name='Searchstr']").val();
+			if(!Searchstr){
+				alert('검색어를 입력하세요');
+				return;
+			}
+			f.attr("action","/korean/page/search.asp").attr("method","post").submit();
+		});
+		$('#Searchstr').keypress(function(event){
+			if ( event.which == 13 ) {
+				$('#search_Frm #s_submit').click();
+				return false;
+			}
+		});
+	});
+</script>
+
+    <div id="banner"><img src="./공임나라 국산차정비_files/banner_sub2.jpg" alt=""></div>
+
+<div id="container">
+	<!-- aside -->
+<script type="text/javascript" src="./공임나라 국산차정비_files/naverLogin_implicit-1.0.3.js.다운로드" charset="utf-8"></script>
+
+<aside id="aside">
+	<div class="login_box">
+		<form name="mainlogin" method="post" action="https://gongim.com/korean/member/login_ok.asp" onsubmit="return mainLoginInputSendit(mainlogin);" style="margin:0;"><input type="hidden" name="returnURL" value="/korean/page/sub2_1.asp?"><div class="form"><input type="text" name="userid" class="text id required" required="" placeholder="아이디"><input type="password" name="passwd" class="text pw required" required="" placeholder="비밀번호"><input type="submit" value="로그인" class="submit"></div></form><div class="login_btm"><p class="check2"><label><input type="checkbox"> 로그인 유지</label></p><div><a href="javascript:NaverLogin(&#39;https://nid.naver.com/oauth2.0/authorize?response_type=token&amp;client_id=NBh6ozQnU3mepBo5JYYc&amp;redirect_uri=https%3A%2F%2Fgongim%2Ecom%2Fnaverlogin%2Easp&amp;state=16232.115251&#39;);"><img src="./공임나라 국산차정비_files/naver_login.gif"></a></div></div><ul class="link"><li><a href="https://gongim.com/korean/member/yak.asp">회원가입</a></li><li><a href="javascript:void(0);" onclick="go_menu(&#39;id_seek&#39;);">아이디</a>/<a href="javascript:void(0);" onclick="go_menu(&#39;pw_seek&#39;);">비밀번호 찾기</a></li></ul>
+	</div>
+
+		<h2>전국지점</h2>
+		<ul id="lnb">
+			<li><a href="https://gongim.com/korean/page/sub2_1.asp" class="on">가맹점찾기</a></li>
+			<li><a href="https://gongim.com/korean/page/sub2_2.asp">협력점찾기</a></li>
+			<li><a href="https://gongim.com/korean/page/sub2_3.asp">셀프정비소</a></li>
+			<li><a href="https://gongim.com/korean/page/sub2_4.asp">우수협력점</a></li>
+			<li><a href="https://gongim.com/korean/page/sub2_5.asp">신규협력점</a></li>
+			<li><a href="https://gongim.com/korean/page/board_list.asp?bbsidx=20">지점갤러리</a></li>
+		</ul>
+	
+	<div class="ad"><a href="http://www.gongim.com/korean/page/board_list.asp?mode=view&amp;page=1&amp;idx=387000&amp;serboardsort=&amp;search=&amp;searchstr=&amp;bbscode=158&amp;bbsidx=158" target="_blank"><img src="./공임나라 국산차정비_files/1232151.jpg" alt=""></a></div>
+	<div class="search">
+		<h3>공임나라 지점찾기</h3>
+		<div class="map">
+			<img src="./공임나라 국산차정비_files/img_map.jpg" alt="전국지도" usemap="#Map">
+			<map name="Map">
+				<area shape="rect" coords="62,29,91,66" href="https://gongim.com/korean/page/sub2_2.asp?areaidx=10" alt="서울">
+				<area shape="rect" coords="21,42,61,65" href="https://gongim.com/korean/page/sub2_2.asp?areaidx=1" alt="인천">
+				<area shape="rect" coords="113,29,148,61" href="https://gongim.com/korean/page/sub2_2.asp?areaidx=2" alt="강원">
+				<area shape="rect" coords="69,67,110,85" href="https://gongim.com/korean/page/sub2_2.asp?areaidx=9" alt="경기">
+				<area shape="rect" coords="50,93,81,123" href="https://gongim.com/korean/page/sub2_2.asp?areaidx=3" alt="충남">
+				<area shape="rect" coords="93,91,135,110" href="https://gongim.com/korean/page/sub2_2.asp?areaidx=11" alt="충북">
+				<area shape="rect" coords="84,111,126,129" href="https://gongim.com/korean/page/sub2_2.asp?areaidx=12" alt="대전">
+				<area shape="rect" coords="135,103,172,122" href="https://gongim.com/korean/page/sub2_2.asp?areaidx=4" alt="경북">
+				<area shape="rect" coords="130,127,175,151" href="https://gongim.com/korean/page/sub2_2.asp?areaidx=13" alt="대구">
+				<area shape="rect" coords="158,152,205,174" href="https://gongim.com/korean/page/sub2_2.asp?areaidx=15" alt="울산">
+				<area shape="rect" coords="148,175,191,197" href="https://gongim.com/korean/page/sub2_2.asp?areaidx=16" alt="부산">
+				<area shape="rect" coords="110,161,152,183" href="https://gongim.com/korean/page/sub2_2.asp?areaidx=7" alt="경남">
+				<area shape="rect" coords="64,142,104,163" href="https://gongim.com/korean/page/sub2_2.asp?areaidx=5" alt="전북">
+				<area shape="rect" coords="33,168,80,188" href="https://gongim.com/korean/page/sub2_2.asp?areaidx=14" alt="광주">
+				<area shape="rect" coords="54,193,95,213" href="https://gongim.com/korean/page/sub2_2.asp?areaidx=6" alt="전남">
+				<area shape="rect" coords="39,232,86,254" href="https://gongim.com/korean/page/sub2_2.asp?areaidx=8" alt="제주">
+			</map>
+		</div>
+	</div>
+
+</aside>
+<!-- //aside -->
+	<div id="contents">
+		<h3 id="title">가맹점찾기</h3>
+		<div style="width:740px;margin:10px 0 10px 0;">
+			<!--iframe frameborder="0" height="70" marginheight="0" marginwidth="0" name="main" onload="resizeIFrame(this);" src="/global_page/slide/index2.asp?level=2" width="740"></iframe-->
+			<div id="wrap2">
+        <div id="main_bn" style="list-style: none; padding: 0px; position: relative; overflow: hidden; width: 740px;">
+      		
+        </div>
+			</div>
+		</div>
+		<!-- content start -->
+		<div class="pg_cooperation">
+			<ul class="tab_menu tab_menu_set5">
+				<li><a href="https://gongim.com/korean/page/sub2_2.asp"><img src="./공임나라 국산차정비_files/sub2_2_ico01.png" alt=""> 국산차정비</a></li>
+				<li><a href="https://gongim.com/global/page/sub2_2.asp" target="_blank"><img src="./공임나라 국산차정비_files/sub2_2_ico02.png" alt=""> 수입차정비</a></li>
+				<li><a href="https://gongim.com/tire/page/sub2_2.asp" target="_blank"><img src="./공임나라 국산차정비_files/sub2_2_ico03.png" alt=""> 타이어전문점</a></li>
+				<li><a href="https://gongim.com/industry/page/sub2_2.asp" target="_blank"><img src="./공임나라 국산차정비_files/sub2_2_ico04.png" alt=""> 네비/블박</a></li>
+				<li><a href="https://gongim.com/external/page/sub2_2.asp" target="_blank"><img src="./공임나라 국산차정비_files/sub2_2_ico05.png" alt=""> 내/외장관리</a></li>
+			</ul>
+			<div class="filter maps">
+				<form name="areaFrm" id="areaFrm" action="https://gongim.com/korean/page/sub2_1.asp" method="get" style="margin:0px;">
+				<div class="map2">
+					<img src="./공임나라 국산차정비_files/img_map2.jpg" alt="전국지도" usemap="#Map2">
+					<map name="Map2">
+						<area shape="rect" coords="43,28,69,42" href="https://gongim.com/korean/page/sub2_1.asp?areaidx=10" alt="서울">
+						<area shape="rect" coords="14,34,40,48" href="https://gongim.com/korean/page/sub2_1.asp?areaidx=1" alt="인천">
+						<area shape="rect" coords="72,29,98,43" href="https://gongim.com/korean/page/sub2_1.asp?areaidx=2" alt="강원">
+						<area shape="rect" coords="34,48,60,62" href="https://gongim.com/korean/page/sub2_1.asp?areaidx=9" alt="경기">
+						<area shape="rect" coords="17,74,43,88" href="https://gongim.com/korean/page/sub2_1.asp?areaidx=3" alt="충남">
+						<area shape="rect" coords="61,50,87,64" href="https://gongim.com/korean/page/sub2_1.asp?areaidx=11" alt="충북">
+						<area shape="rect" coords="43,66,69,80" href="https://gongim.com/korean/page/sub2_1.asp?areaidx=17" alt="세종">
+						<area shape="rect" coords="58,83,84,97" href="https://gongim.com/korean/page/sub2_1.asp?areaidx=12" alt="대전">
+						<area shape="rect" coords="86,71,112,85" href="https://gongim.com/korean/page/sub2_1.asp?areaidx=4" alt="경북">
+						<area shape="rect" coords="79,97,105,111" href="https://gongim.com/korean/page/sub2_1.asp?areaidx=13" alt="대구">
+						<area shape="rect" coords="105,105,128,119" href="https://gongim.com/korean/page/sub2_1.asp?areaidx=15" alt="울산">
+						<area shape="rect" coords="97,131,123,145" href="https://gongim.com/korean/page/sub2_1.asp?areaidx=16" alt="부산">
+						<area shape="rect" coords="66,129,92,143" href="https://gongim.com/korean/page/sub2_1.asp?areaidx=7" alt="경남">
+						<area shape="rect" coords="33,109,59,123" href="https://gongim.com/korean/page/sub2_1.asp?areaidx=5" alt="전북">
+						<area shape="rect" coords="35,134,61,148" href="https://gongim.com/korean/page/sub2_1.asp?areaidx=14" alt="광주">
+						<area shape="rect" coords="13,148,39,162" href="https://gongim.com/korean/page/sub2_1.asp?areaidx=6" alt="전남">
+						<area shape="rect" coords="31,178,57,192" href="https://gongim.com/korean/page/sub2_1.asp?areaidx=8" alt="제주">
+					</map>
+				</div>
+				<table>
+					<colgroup>
+						<col width="50%">
+						<col width="50%">
+					</colgroup>
+					<tbody>
+					<tr>
+						<td colspan="2" class="over_h">
+							<strong>서비스구분</strong>
+							<ul class="row4">
+								<li><input type="checkbox" name="korean" value="360"> 딜리버리</li><li><input type="checkbox" name="korean" value="363"> 셀프정비소</li><li><input type="checkbox" name="korean" value="364"> 세차장</li><li><input type="checkbox" name="korean" value="366"> 대형차정비</li>
+								
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<th colspan="2">매장검색</th>
+					</tr>
+					<tr class="nop">
+						<td>
+							<select class="select" name="areaidx" onchange="changeareaData(this.value)" style="width:120px;"><option value="">선택하세요</option>
+								<option value="10">서울</option>
+								<option value="16">부산</option>
+								<option value="13">대구</option>
+								<option value="1">인천</option>
+								<option value="14">광주</option>
+								<option value="12">대전</option>
+								<option value="15">울산</option>
+								<option value="2">강원</option>
+								<option value="9">경기</option>
+								<option value="7">경남</option>
+								<option value="4">경북</option>
+								<option value="6">전남</option>
+								<option value="5">전북</option>
+								<option value="8">제주</option>
+								<option value="3">충남</option>
+								<option value="11">충북</option>
+								<option value="17">세종</option>
+							</select>
+							<select class="select" name="lccode" id="lccode" style="width:120px;"><option value="">구/군</option></select>
+						</td>
+						<td>
+							<input type="text" name="searchstr" value="" class="int" style="width:175px;" placeholder="매장명을 검색해주세요">
+							<button type="button" id="submit" class="submit">검색</button>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<p>* 지역을 클릭하시면 지역 가맹점 리스트를 확인할 수 있습니다.</p>
+							<table border="1" id="areaID"><tbody><tr></tr><tr><td attr="10" class="bg hand">서울</td>
+								<td attr="16" class="bg hand">부산</td>
+								<td attr="13" class="bg hand">대구</td>
+								<td attr="1" class="bg hand">인천</td>
+								<td attr="14" class="bg hand">광주</td>
+								<td attr="12" class="bg hand">대전</td>
+								</tr><tr><td attr="15" class="bg hand">울산</td>
+								<td attr="2" class="bg hand">강원</td>
+								<td attr="9" class="bg hand">경기</td>
+								<td attr="7" class="bg hand">경남</td>
+								<td attr="4" class="bg hand">경북</td>
+								<td attr="6" class="bg hand">전남</td>
+								</tr><tr><td attr="5" class="bg hand">전북</td>
+								<td attr="8" class="bg hand">제주</td>
+								<td attr="3" class="bg hand">충남</td>
+								<td attr="11" class="bg hand">충북</td>
+								<td attr="17" class="bg hand">세종</td>
+				<td class="bg" attr="0">&nbsp;</td></tr></tbody></table>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				</form>
+			</div>
+			<ul class="icon_info">
+				<li><img src="./공임나라 국산차정비_files/icon_service01.gif" alt="셀프정비">실내청소</li>
+				<li><img src="./공임나라 국산차정비_files/icon_service02.gif" alt="세차">엔진룸세척</li>
+				<li><img src="./공임나라 국산차정비_files/icon_service03.gif" alt="수입차">기본점검</li>
+				<li><img src="./공임나라 국산차정비_files/icon_service04.gif" alt="타이어">공기압체크</li>
+				<li><img src="./공임나라 국산차정비_files/icon_service05.gif" alt="잔유제거">잔유제거</li>
+			</ul>
+			<div class="bbs_list mt10">
+				<table>
+					<colgroup>
+						<col style="width:10%;">
+						<col style="width:13%;">
+						<col style="width:auto;">
+						<col style="width:13%;">
+						<col style="width:8%;">
+						<col style="width:11%;">
+						<col style="width:18%;">
+					</colgroup>
+					<thead>
+					<tr>
+						<th>등급</th>
+						<th>매장명</th>
+						<th>주소</th>
+						<th>전화번호</th>
+						<th>후기</th>
+						<th>정비예약</th>
+						<th>무상서비스</th>
+					</tr>
+					</thead>
+					<tbody id="ajax_get_idx_content">
+						<tr>
+	<td>
+<img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png">	</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1267&amp;num=1"><strong>하남[감북점]</strong></a></td>
+	<td class="tal"><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1267&amp;num=1">경기도 하남시 감일동 114-26</a></td>
+	<td>02-476-3666</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1267&amp;num=1"><strong class="c_orange">79건</strong></a></td>
+	<td><a href="https://gongim.com/korean/page/storeRevList.asp?storeidx=1267&amp;num=1" class="btn_book">예약하기</a></td>
+	<td><i class="tag tag5"><img src="./공임나라 국산차정비_files/icon_service01.gif" alt="실내진공청소"></i><i class="tag tag4"><img src="./공임나라 국산차정비_files/icon_service02.gif" alt="엔진룸세척"></i><i class="tag tag3"><img src="./공임나라 국산차정비_files/icon_service03.gif" alt="차량무상점검"></i><i class="tag tag2"><img src="./공임나라 국산차정비_files/icon_service04.gif" alt="공기압체크"></i><i class="tag tag1"><img src="./공임나라 국산차정비_files/icon_service05.gif" alt="잔유제거"></i>	</td>
+</tr>
+<tr>
+	<td>
+<img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png">	</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=300&amp;num=1"><strong>하남점</strong></a></td>
+	<td class="tal"><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=300&amp;num=1">경기도 하남시 덕풍동 782-1</a></td>
+	<td>031-795-3666</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=300&amp;num=1"><strong class="c_orange">91건</strong></a></td>
+	<td><a href="https://gongim.com/korean/page/storeRevList.asp?storeidx=300&amp;num=1" class="btn_book">예약하기</a></td>
+	<td><i class="tag tag5"><img src="./공임나라 국산차정비_files/icon_service01.gif" alt="실내진공청소"></i><i class="tag tag4"><img src="./공임나라 국산차정비_files/icon_service02.gif" alt="엔진룸세척"></i><i class="tag tag3"><img src="./공임나라 국산차정비_files/icon_service03.gif" alt="차량무상점검"></i><i class="tag tag2"><img src="./공임나라 국산차정비_files/icon_service04.gif" alt="공기압체크"></i><i class="tag tag1"><img src="./공임나라 국산차정비_files/icon_service05.gif" alt="잔유제거"></i>	</td>
+</tr>
+<tr>
+	<td>
+<img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png">	</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=901&amp;num=1"><strong>하남[덕풍점]</strong></a></td>
+	<td class="tal"><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=901&amp;num=1">경기도 하남시 덕풍동 771-2</a></td>
+	<td>031-795-3660</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=901&amp;num=1"><strong class="c_orange">73건</strong></a></td>
+	<td><a href="https://gongim.com/korean/page/storeRevList.asp?storeidx=901&amp;num=1" class="btn_book">예약하기</a></td>
+	<td><i class="tag tag5"><img src="./공임나라 국산차정비_files/icon_service01.gif" alt="실내진공청소"></i><i class="tag tag4"><img src="./공임나라 국산차정비_files/icon_service02.gif" alt="엔진룸세척"></i><i class="tag tag3"><img src="./공임나라 국산차정비_files/icon_service03.gif" alt="차량무상점검"></i><i class="tag tag2"><img src="./공임나라 국산차정비_files/icon_service04.gif" alt="공기압체크"></i><i class="tag tag1"><img src="./공임나라 국산차정비_files/icon_service05.gif" alt="잔유제거"></i>	</td>
+</tr>
+<tr>
+	<td>
+<img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png">	</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1351&amp;num=1"><strong>강릉[노암점]</strong></a></td>
+	<td class="tal"><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1351&amp;num=1">강원도 강릉시 남부로200</a></td>
+	<td>033-647-1589</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1351&amp;num=1"><strong class="c_orange">15건</strong></a></td>
+	<td><a href="https://gongim.com/korean/page/storeRevList.asp?storeidx=1351&amp;num=1" class="btn_book">예약하기</a></td>
+	<td><i class="tag tag4"><img src="./공임나라 국산차정비_files/icon_service02.gif" alt="엔진룸세척"></i><i class="tag tag3"><img src="./공임나라 국산차정비_files/icon_service03.gif" alt="차량무상점검"></i><i class="tag tag2"><img src="./공임나라 국산차정비_files/icon_service04.gif" alt="공기압체크"></i><i class="tag tag1"><img src="./공임나라 국산차정비_files/icon_service05.gif" alt="잔유제거"></i>	</td>
+</tr>
+<tr>
+	<td>
+<img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png">	</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1269&amp;num=1"><strong>속초[노학점]</strong></a></td>
+	<td class="tal"><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1269&amp;num=1">강원도 속초시 온천로 104</a></td>
+	<td>010-2581-1751</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1269&amp;num=1"><strong class="c_orange">42건</strong></a></td>
+	<td><a href="https://gongim.com/korean/page/storeRevList.asp?storeidx=1269&amp;num=1" class="btn_book">예약하기</a></td>
+	<td><i class="tag tag4"><img src="./공임나라 국산차정비_files/icon_service02.gif" alt="엔진룸세척"></i><i class="tag tag3"><img src="./공임나라 국산차정비_files/icon_service03.gif" alt="차량무상점검"></i><i class="tag tag2"><img src="./공임나라 국산차정비_files/icon_service04.gif" alt="공기압체크"></i><i class="tag tag1"><img src="./공임나라 국산차정비_files/icon_service05.gif" alt="잔유제거"></i>	</td>
+</tr>
+<tr>
+	<td>
+<img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png">	</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1196&amp;num=1"><strong>원주[우산점]</strong></a></td>
+	<td class="tal"><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1196&amp;num=1">강원도 원주시 우산동 76-9</a></td>
+	<td>033-747-8297</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1196&amp;num=1"><strong class="c_orange">94건</strong></a></td>
+	<td><a href="https://gongim.com/korean/page/storeRevList.asp?storeidx=1196&amp;num=1" class="btn_book">예약하기</a></td>
+	<td><i class="tag tag4"><img src="./공임나라 국산차정비_files/icon_service02.gif" alt="엔진룸세척"></i><i class="tag tag3"><img src="./공임나라 국산차정비_files/icon_service03.gif" alt="차량무상점검"></i><i class="tag tag2"><img src="./공임나라 국산차정비_files/icon_service04.gif" alt="공기압체크"></i><i class="tag tag1"><img src="./공임나라 국산차정비_files/icon_service05.gif" alt="잔유제거"></i>	</td>
+</tr>
+<tr>
+	<td>
+<img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png">	</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1428&amp;num=1"><strong>원주[구곡점]</strong></a></td>
+	<td class="tal"><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1428&amp;num=1">강원도 원주시 판부면 서곡리 419-13</a></td>
+	<td>033-764-3501</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1428&amp;num=1"><strong class="c_orange">19건</strong></a></td>
+	<td><a href="https://gongim.com/korean/page/storeRevList.asp?storeidx=1428&amp;num=1" class="btn_book">예약하기</a></td>
+	<td><i class="tag tag4"><img src="./공임나라 국산차정비_files/icon_service02.gif" alt="엔진룸세척"></i><i class="tag tag3"><img src="./공임나라 국산차정비_files/icon_service03.gif" alt="차량무상점검"></i><i class="tag tag2"><img src="./공임나라 국산차정비_files/icon_service04.gif" alt="공기압체크"></i><i class="tag tag1"><img src="./공임나라 국산차정비_files/icon_service05.gif" alt="잔유제거"></i>	</td>
+</tr>
+<tr>
+	<td>
+<img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png">	</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=693&amp;num=1"><strong>춘천[근화점]</strong></a></td>
+	<td class="tal"><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=693&amp;num=1">강원도 춘천시 근화동 710-42</a></td>
+	<td>033-257-8042</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=693&amp;num=1"><strong class="c_orange">109건</strong></a></td>
+	<td><a href="https://gongim.com/korean/page/storeRevList.asp?storeidx=693&amp;num=1" class="btn_book">예약하기</a></td>
+	<td><i class="tag tag4"><img src="./공임나라 국산차정비_files/icon_service02.gif" alt="엔진룸세척"></i><i class="tag tag3"><img src="./공임나라 국산차정비_files/icon_service03.gif" alt="차량무상점검"></i><i class="tag tag2"><img src="./공임나라 국산차정비_files/icon_service04.gif" alt="공기압체크"></i><i class="tag tag1"><img src="./공임나라 국산차정비_files/icon_service05.gif" alt="잔유제거"></i>	</td>
+</tr>
+<tr>
+	<td>
+<img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png">	</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=678&amp;num=1"><strong>고양[원흥점]</strong></a></td>
+	<td class="tal"><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=678&amp;num=1">경기도 고양시 덕양구 원흥동 652-2</a></td>
+	<td>031-966-8861</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=678&amp;num=1"><strong class="c_orange">104건</strong></a></td>
+	<td><a href="https://gongim.com/korean/page/storeRevList.asp?storeidx=678&amp;num=1" class="btn_book">예약하기</a></td>
+	<td><i class="tag tag4"><img src="./공임나라 국산차정비_files/icon_service02.gif" alt="엔진룸세척"></i><i class="tag tag3"><img src="./공임나라 국산차정비_files/icon_service03.gif" alt="차량무상점검"></i><i class="tag tag2"><img src="./공임나라 국산차정비_files/icon_service04.gif" alt="공기압체크"></i><i class="tag tag1"><img src="./공임나라 국산차정비_files/icon_service05.gif" alt="잔유제거"></i>	</td>
+</tr>
+<tr>
+	<td>
+<img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png">	</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=39&amp;num=1"><strong>고양[덕양점]</strong></a></td>
+	<td class="tal"><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=39&amp;num=1">경기도 고양시 덕양구 토당동  51-7 </a></td>
+	<td>031-938-2173</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=39&amp;num=1"><strong class="c_orange">132건</strong></a></td>
+	<td><a href="https://gongim.com/korean/page/storeRevList.asp?storeidx=39&amp;num=1" class="btn_book">예약하기</a></td>
+	<td><i class="tag tag4"><img src="./공임나라 국산차정비_files/icon_service02.gif" alt="엔진룸세척"></i><i class="tag tag3"><img src="./공임나라 국산차정비_files/icon_service03.gif" alt="차량무상점검"></i><i class="tag tag2"><img src="./공임나라 국산차정비_files/icon_service04.gif" alt="공기압체크"></i><i class="tag tag1"><img src="./공임나라 국산차정비_files/icon_service05.gif" alt="잔유제거"></i>	</td>
+</tr>
+<tr>
+	<td>
+<img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png">	</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=590&amp;num=1"><strong>일산[백석점]</strong></a></td>
+	<td class="tal"><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=590&amp;num=1">경기도 고양시 일산동구 백석동 1173-4</a></td>
+	<td>031-907-8242</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=590&amp;num=1"><strong class="c_orange">82건</strong></a></td>
+	<td><a href="https://gongim.com/korean/page/storeRevList.asp?storeidx=590&amp;num=1" class="btn_book">예약하기</a></td>
+	<td><i class="tag tag4"><img src="./공임나라 국산차정비_files/icon_service02.gif" alt="엔진룸세척"></i><i class="tag tag3"><img src="./공임나라 국산차정비_files/icon_service03.gif" alt="차량무상점검"></i><i class="tag tag2"><img src="./공임나라 국산차정비_files/icon_service04.gif" alt="공기압체크"></i><i class="tag tag1"><img src="./공임나라 국산차정비_files/icon_service05.gif" alt="잔유제거"></i>	</td>
+</tr>
+<tr>
+	<td>
+<img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png">	</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1436&amp;num=1"><strong>일산[식사점]</strong></a></td>
+	<td class="tal"><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1436&amp;num=1">경기도 고양시 일산동구 식사동 575-27</a></td>
+	<td>031-965-3233</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1436&amp;num=1"><strong class="c_orange">4건</strong></a></td>
+	<td><a href="https://gongim.com/korean/page/storeRevList.asp?storeidx=1436&amp;num=1" class="btn_book">예약하기</a></td>
+	<td><i class="tag tag5"><img src="./공임나라 국산차정비_files/icon_service01.gif" alt="실내진공청소"></i><i class="tag tag4"><img src="./공임나라 국산차정비_files/icon_service02.gif" alt="엔진룸세척"></i><i class="tag tag3"><img src="./공임나라 국산차정비_files/icon_service03.gif" alt="차량무상점검"></i><i class="tag tag2"><img src="./공임나라 국산차정비_files/icon_service04.gif" alt="공기압체크"></i><i class="tag tag1"><img src="./공임나라 국산차정비_files/icon_service05.gif" alt="잔유제거"></i>	</td>
+</tr>
+<tr>
+	<td>
+<img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png">	</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=843&amp;num=1"><strong>일산[서구점]</strong></a></td>
+	<td class="tal"><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=843&amp;num=1">경기도 고양시 일산서구 가좌동 997</a></td>
+	<td>031-924-0283</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=843&amp;num=1"><strong class="c_orange">146건</strong></a></td>
+	<td><a href="https://gongim.com/korean/page/storeRevList.asp?storeidx=843&amp;num=1" class="btn_book">예약하기</a></td>
+	<td><i class="tag tag5"><img src="./공임나라 국산차정비_files/icon_service01.gif" alt="실내진공청소"></i><i class="tag tag4"><img src="./공임나라 국산차정비_files/icon_service02.gif" alt="엔진룸세척"></i><i class="tag tag3"><img src="./공임나라 국산차정비_files/icon_service03.gif" alt="차량무상점검"></i><i class="tag tag2"><img src="./공임나라 국산차정비_files/icon_service04.gif" alt="공기압체크"></i><i class="tag tag1"><img src="./공임나라 국산차정비_files/icon_service05.gif" alt="잔유제거"></i>	</td>
+</tr>
+<tr>
+	<td>
+<img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png">	</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1275&amp;num=1"><strong>일산[대화점]</strong></a></td>
+	<td class="tal"><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1275&amp;num=1">경기도 고양시 일산서구 대화동 2087</a></td>
+	<td>031-916-0394</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1275&amp;num=1"><strong class="c_orange">53건</strong></a></td>
+	<td><a href="https://gongim.com/korean/page/storeRevList.asp?storeidx=1275&amp;num=1" class="btn_book">예약하기</a></td>
+	<td><i class="tag tag4"><img src="./공임나라 국산차정비_files/icon_service02.gif" alt="엔진룸세척"></i><i class="tag tag3"><img src="./공임나라 국산차정비_files/icon_service03.gif" alt="차량무상점검"></i><i class="tag tag2"><img src="./공임나라 국산차정비_files/icon_service04.gif" alt="공기압체크"></i><i class="tag tag1"><img src="./공임나라 국산차정비_files/icon_service05.gif" alt="잔유제거"></i>	</td>
+</tr>
+<tr>
+	<td>
+<img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png"><img src="./공임나라 국산차정비_files/starv1_10.png">	</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1258&amp;num=1"><strong>광명[하안점]</strong></a></td>
+	<td class="tal"><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1258&amp;num=1">경기도 광명시 하안1동 317-24</a></td>
+	<td>02-897-4040</td>
+	<td><a href="https://gongim.com/korean/page/sub2_13.asp?storeidx=1258&amp;num=1"><strong class="c_orange">60건</strong></a></td>
+	<td><a href="https://gongim.com/korean/page/storeRevList.asp?storeidx=1258&amp;num=1" class="btn_book">예약하기</a></td>
+	<td><i class="tag tag4"><img src="./공임나라 국산차정비_files/icon_service02.gif" alt="엔진룸세척"></i><i class="tag tag3"><img src="./공임나라 국산차정비_files/icon_service03.gif" alt="차량무상점검"></i><i class="tag tag2"><img src="./공임나라 국산차정비_files/icon_service04.gif" alt="공기압체크"></i><i class="tag tag1"><img src="./공임나라 국산차정비_files/icon_service05.gif" alt="잔유제거"></i>	</td>
+</tr>
+<script>function calltell(num){	location.href="tel:"+num; }</script>
+					</tbody>
+				</table>
+			</div>
+			<div class="paginate" id="ajax_get_idx_page">
+				<a href="javascript:void(0);" class="btn first"></a>
+<a href="javascript:void(0)" class="btn prev"></a><strong>1</strong>
+<a href="https://gongim.com/korean/page/sub2_1.asp?page=2&amp;serjobidx=&amp;areaidx=&amp;lccode=&amp;SearchStr=">2</a>
+<a href="https://gongim.com/korean/page/sub2_1.asp?page=3&amp;serjobidx=&amp;areaidx=&amp;lccode=&amp;SearchStr=">3</a>
+<a href="https://gongim.com/korean/page/sub2_1.asp?page=4&amp;serjobidx=&amp;areaidx=&amp;lccode=&amp;SearchStr=">4</a>
+<a href="https://gongim.com/korean/page/sub2_1.asp?page=5&amp;serjobidx=&amp;areaidx=&amp;lccode=&amp;SearchStr=">5</a>
+<a href="https://gongim.com/korean/page/sub2_1.asp?page=6&amp;serjobidx=&amp;areaidx=&amp;lccode=&amp;SearchStr=">6</a>
+<a href="https://gongim.com/korean/page/sub2_1.asp?page=7&amp;serjobidx=&amp;areaidx=&amp;lccode=&amp;SearchStr=">7</a>
+<a href="https://gongim.com/korean/page/sub2_1.asp?page=8&amp;serjobidx=&amp;areaidx=&amp;lccode=&amp;SearchStr=">8</a>
+<a href="https://gongim.com/korean/page/sub2_1.asp?page=9&amp;serjobidx=&amp;areaidx=&amp;lccode=&amp;SearchStr=">9</a>
+<a href="https://gongim.com/korean/page/sub2_1.asp?page=10&amp;serjobidx=&amp;areaidx=&amp;lccode=&amp;SearchStr=">10</a>
+<a href="https://gongim.com/korean/page/sub2_1.asp?page=2&amp;serjobidx=&amp;areaidx=&amp;lccode=&amp;SearchStr=" class="btn next"></a>
+<a href="https://gongim.com/korean/page/sub2_1.asp?page=11&amp;serjobidx=&amp;areaidx=&amp;lccode=&amp;SearchStr=" class="btn last"></a>
+
+			</div>
+		</div>
+		<!-- content end -->
+	</div>
+
+</div>
+
+<div id="quick" style="top: 199px;">
+	<ul>
+		<li><a href="https://smartstore.naver.com/eluxgokorea/products/4731839993" target="_blank"><img src="./공임나라 국산차정비_files/KakaoTalk_20200313_171901987.jpg" alt=""></a></li><li><a href="javascript:void(0);" target=""><img src="./공임나라 국산차정비_files/최종1.jpg" alt=""></a></li>
+	</ul>
+</div>
+
+<footer id="footer">
+	<div class="footer_head">
+		<div class="inner">
+			<h2><img src="./공임나라 국산차정비_files/logo_l.png" alt="자동차 공임나라"></h2>
+			<ul class="link">
+				<li><a href="https://gongim.com/korean/page/sub1_2.asp" class="strong">공임나라소개</a></li>
+				<li><a href="https://gongim.com/korean/page/sub1_1.asp?mode=view&amp;storeidx=&amp;serboardsort=&amp;page=1&amp;idx=70495&amp;search=&amp;searchstr=&amp;bbsidx=&amp;Pointpage=">포인트안내</a></li>
+				<li><a href="https://gongim.com/korean/page/sub1_1.asp?mode=view&amp;storeidx=&amp;serboardsort=&amp;page=1&amp;idx=35568&amp;search=&amp;searchstr=&amp;bbsidx=">광고문의</a></li>
+				<li><a href="https://gongim.com/korean/page/sub6_7.asp">제휴문의</a></li>
+				<li><a href="https://gongim.com/korean/page/sub1_1.asp?mode=view&amp;storeidx=&amp;serboardsort=&amp;page=1&amp;idx=35376&amp;search=&amp;searchstr=&amp;bbsidx=">이용안내</a></li>
+				<li><a href="https://www.gongim.com/korean/page/sub1_6.asp" class="strong">지점신청</a></li>
+				<li><a href="javascript:void(0);" data-link="/korean/page/yak1.asp" class="fancy2"><strong>개인정보취급방침</strong></a></li>
+				<!-- <li><a href="/korean/page/sub1_5.asp">협력점신청</a></li> -->
+			</ul>
+			<dl class="family">
+			  <dt>패밀리사이트 <img src="./공임나라 국산차정비_files/arrow_family.gif" alt="패밀리사이트"></dt>
+				<dd>
+					<ul>
+						<li><a href="https://gongim.com/korean/">국산차</a></li>
+						<li><a href="https://gongim.com/global/">수입차</a></li>
+						<li><a href="https://gongim.com/tire/">타이어</a></li>
+						<li><a href="https://gongim.com/industry/">네비/블박</a></li>
+						<li><a href="https://gongim.com/external/">외장관리</a></li>
+						<li><a href="https://gongim.com/community/">커뮤니티</a></li>
+						<li><a href="https://gongim.com/point_mall/">포인트몰</a></li>
+						<!--li ><a href="/point_mall/">쇼핑몰</a></li-->
+					</ul>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<div class="info">
+		<p>상호 : 주식회사 자동차 공임나라 <span>|</span> 대표자 : 송상태 <span>|</span> 사업자번호 : 126-86-66889 <span>|</span> 통신판매신고 : 제2013-경기하남-0068 <span>|</span> 대표번호 1688-7874</p>
+		<p>주소 : 경기도 하남시 덕풍북로 38 (구 덕풍동782-1) 4층 <span>|</span> <!-- 대표전화 : 1688-7874 <span>|</span> --> E-mail : alsl0601@naver.com <span>|</span> 공임나라 Corp. 개인정보취급담당자 : 송상태</p>
+		<!-- <p>Copyright&copy;2016공임나라. All rights reserved.</p> -->
+		<ul class="sns">
+			<li><a href="https://gongim.com/korean/page/sub2_1.asp#this"><img src="./공임나라 국산차정비_files/icon_instar.gif" alt="인스타그램"></a></li>
+			<li><a href="https://gongim.com/korean/page/sub2_1.asp#this"><img src="./공임나라 국산차정비_files/icon_face.gif" alt="페이스북"></a></li>
+			<li><a href="https://gongim.com/korean/page/sub2_1.asp#this"><img src="./공임나라 국산차정비_files/icon_blog.gif" alt="블로그"></a></li>
+		</ul>
+	</div>
+</footer>
+<script type="text/javascript">
+//<![CDATA[
+	$(document).ready(function() {
+		$('.family dt').click(function(){
+			$('.family').toggleClass('on');
+		});
+	});
+//]]>
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	/*
+	var cnt = $("div.gallery_list > ul > li img").length;
+	if(cnt > 0){
+		$("div.gallery_list > ul > li img").attr("width",168).attr("height",126).attr("style","");
+	}
+	*/
+});
+$(function(){
+	$('.spread_open').hide();
+	
+		$('.spread').css({"cursor":"default"});
+	
+});
+</script>
+
+
+<script src="./공임나라 국산차정비_files/update.min.js.다운로드"></script></body></html>
