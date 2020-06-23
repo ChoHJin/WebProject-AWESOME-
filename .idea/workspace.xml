@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9196c46c-6684-45e8-85b7-b55bbaabd42f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TEAM PROJECT/loginForm.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TeamP/cartuning2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TeamP/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/css/style.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/css/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/fonts/material-design-iconic-font/css/material-design-iconic-font.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/fonts/material-design-iconic-font/fonts/Material-Design-Iconic-Font.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/fonts/material-design-iconic-font/fonts/Material-Design-Iconic-Font.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/fonts/material-design-iconic-font/fonts/Material-Design-Iconic-Font.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/fonts/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/fonts/material-design-iconic-font/fonts/Material-Design-Iconic-Font.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/fonts/poppins/Poppins-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/fonts/poppins/Poppins-SemiBold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/images/accountSettingsback.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/images/asettings.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/images/forget password.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/images/forgetpasswordcover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/images/login.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/images/loginback.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/images/registerback.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design_files/images/registration-form-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebaseui/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebaseui/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebaseui/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebaseui/desktop.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebaseui/dist/esm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebaseui/dist/externs/firebaseui-externs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebaseui/dist/firebaseui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebaseui/dist/firebaseui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebaseui/dist/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebaseui/dist/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/firebaseui/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/another.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/audio.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/big.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/carimg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/cc1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/cc2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/cc3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/cc4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/ct1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/ct2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/engine.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/etc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/hole.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/korean.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/mid.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/suspension.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/truck.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/wheel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/imgs/wrapping.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/01ab6619093f45388d66736ec22e5885.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/03024c4b302c4fa98dc4549040c10681.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/23fd2a2be53141ed810f4d3dcdcd01fa.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/7528824071724d12a3e6c31eee0b40d4.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/ReactPlayer.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/ScrollToPlugin.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/all-widgets.bundle.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/all-widgets.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/analytics-event-adapter.bundle.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/backgroundCommon.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/bolt-components.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/bolt-custom-elements.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/bolt-main-prod.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/bolt-main-r.animations.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/bolt-main-r.init.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/bolt-main-r.vendors_animations.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/bolt-main-r.vendors_init.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/bundle.min.js(1).다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/bundle.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/chat-interactivity.chunk.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/chat-interactivity.chunk.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/chat-web_translations_16.chunk.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/chat-web_translations_6.chunk.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/color.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/comboBoxInput.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/common.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/components.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/componentsCore.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/controller.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/controls.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/coreUtils.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/coreUtils.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/custom-feed-widget.bundle.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/custom-feed-widget.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/custom-feed-widget.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/d3f75d1d718d42b0b38f081e30d711fa.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/dataRefs.bundle.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/dataRefs.bundle.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/default_pin_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/displayer.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/fedops-logger.bundle.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/firebase-app.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/firebase-auth.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/firebase-database.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/focus-visible.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/fontFace.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/frame-listener.bundle.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/galleriesCommon.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/google-map.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/googleMap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/googleMap.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/google_white5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/gsap.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/i18next.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/icon.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/imageClientApi.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/imageZoom.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/infowindow.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/languages.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/layout.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/linkBar.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/lodash.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/loginSocialBar.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/main-r.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/map.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/marker.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/mediaContainer.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/mobileLayoutUtils.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/moment.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/onion.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/overrides.bundle.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/pm-rpc.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/polyfill.min.js(1).다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/polyfill.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/react-dom.production.min.js(1).다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/react-dom.production.min.js(2).다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/react-dom.production.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/react.production.min.js(1).다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/react.production.min.js(2).다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/react.production.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/requirejs.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/santa-animations.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/santa-components-layout.prod.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/santa-components.prod.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/saved_resource.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/sentry-lazy-load.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/siteRegionContainer.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/skin-utils.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/skinExports.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/skins.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/stats.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/stripColumnsContainer.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/svgShape.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/textArea.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/textCommon.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/thirdPartyAnalytics.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/tpaComponents.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/util.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/verticalMenu.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/viewerComponentService.bundle.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(1)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(10)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(11)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(12)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(13)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(14)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(15)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(16)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(17)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(18)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(19)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(2)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(20)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(3)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(4)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(5)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(6)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(7)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(8)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/vt(9)" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/warmupUtils.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/warmupUtils.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/widgetComponent.bundle.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/widgetComponent.stylable.bundle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/wix-dom-sanitizer.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/wix-private.min.js(1).다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/wix-private.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/wixFreemiumBanner.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/xss.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/stylesheets/메인 _ Awesome_files/zepto.min.js.다운로드" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/board1/BOOK.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/board1/accountSettings.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/board1/carauto2.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/board1/carcenter2.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/board1/forgetPassword.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/board1/mainForm.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/board1/signin.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/board1/signup.ejs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/board1.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/board1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/cPosts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/stylesheets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/stylesheets/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/board1/boardForm.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/board1/boardForm.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/board1/boardList.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/board1/boardList.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/board1/boardRead.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/board1/boardRead.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/board1/loginForm.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/form.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/main.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/js/firebase.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/main/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/index.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/test.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/test.ejs" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1dLtVCe137A4w73WvierVSjsUyr" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="12.16.3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/views/board1" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\Documents\GitHub\WebProject-AWESOME-\views\board1" />
+      <recent name="C:\Users\pc\Documents\GitHub\WebProject-AWESOME-\views" />
+      <recent name="C:\Users\pc\Documents\GitHub\WebProject-AWESOME-\crown-clothing-master" />
+      <recent name="C:\Users\pc\Documents\GitHub\WebProject-AWESOME-\views\main" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pc\Documents\GitHub\WebProject-AWESOME-\views\board1" />
+      <recent name="C:\Users\pc\Documents\GitHub\WebProject-AWESOME-" />
+      <recent name="C:\Users\pc\Documents\GitHub\WebProject-AWESOME-\views" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="board1.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/routes/board1.js" working-dir="$PROJECT_DIR$/routes">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.board1.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9196c46c-6684-45e8-85b7-b55bbaabd42f" name="Default Changelist" comment="" />
+      <created>1592216222286</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592216222286</updated>
+      <workItem from="1592216223887" duration="28397000" />
+      <workItem from="1592331585216" duration="17481000" />
+      <workItem from="1592409252047" duration="3145000" />
+      <workItem from="1592802066348" duration="7955000" />
+      <workItem from="1592813961025" duration="384000" />
+      <workItem from="1592833324892" duration="804000" />
+      <workItem from="1592839567146" duration="2899000" />
+      <workItem from="1592842791684" duration="3035000" />
+      <workItem from="1592846390241" duration="3618000" />
+      <workItem from="1592850063584" duration="360000" />
+      <workItem from="1592850458212" duration="647000" />
+      <workItem from="1592851145041" duration="775000" />
+      <workItem from="1592852921141" duration="92000" />
+      <workItem from="1592853043548" duration="32490000" />
+      <workItem from="1592885899327" duration="1575000" />
+      <workItem from="1592891127313" duration="982000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="654" y="246" width="697" height="331" key="#File_Watchers" timestamp="1592847030065">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="654" y="246" width="697" height="331" key="#File_Watchers/0.0.1536.824@0.0.1536.824" timestamp="1592847030065" />
+    <state x="406" y="142" width="701" height="517" key="#Notifications" timestamp="1592875210110">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="406" y="142" width="701" height="517" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1592875210110" />
+    <state x="294" y="246" key="#Template_Data_Languages" timestamp="1592883094004">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="294" y="246" key="#Template_Data_Languages/0.0.1536.824@0.0.1536.824" timestamp="1592883094004" />
+    <state x="420" y="109" width="724" height="494" key="#Vim_Emulation" timestamp="1592853804752">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="420" y="109" width="724" height="494" key="#Vim_Emulation/0.0.1536.824@0.0.1536.824" timestamp="1592853804752" />
+    <state x="447" y="61" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592216396215">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="447" y="61" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1592216396215" />
+    <state x="915" y="216" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592865230321">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="915" y="216" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1592865230321" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592847477470">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1592847477470" />
+    <state x="433" y="189" key="EditFileWatcherDialog" timestamp="1592845894528">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="433" y="189" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1592845894528" />
+    <state x="933" y="170" key="FileChooserDialogImpl" timestamp="1592842786901">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="933" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1592842786901" />
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom" timestamp="1592887487895">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="205" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1592887487895" />
+    <state width="1493" height="205" key="GridCell.Tab.0.center" timestamp="1592887487895">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="205" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1592887487895" />
+    <state width="1493" height="205" key="GridCell.Tab.0.left" timestamp="1592887487895">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="205" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1592887487895" />
+    <state width="1493" height="205" key="GridCell.Tab.0.right" timestamp="1592887487895">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="205" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592887487895" />
+    <state x="517" y="114" key="RollbackChangesDialog" timestamp="1592227076443">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="517" y="114" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1592227076443" />
+    <state x="56" y="82" width="1265" height="710" key="SettingsEditor" timestamp="1592875271811">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="56" y="82" width="1265" height="710" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1592875271811" />
+    <state x="571" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592857663385">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="571" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1592857663385" />
+    <state x="740" y="113" width="575" height="567" key="dock-window-1" timestamp="1592227837993">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="740" y="113" width="575" height="567" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1592227837993" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1592863834238">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1592863834238" />
+    <state x="425" y="66" width="670" height="676" key="search.everywhere.popup" timestamp="1592874203566">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="66" width="670" height="676" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1592874203566" />
+  </component>
+</project>

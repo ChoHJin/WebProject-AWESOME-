@@ -11,12 +11,17 @@
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
     "firebase": "^7.15.1",
     "firebase-admin": "^8.12.1",
     "firebase-functions": "^3.7.0",
+    "firebaseui": "^4.5.1",
     "firestore": "^1.1.6",
     "http-errors": "~1.6.3",
     "morgan": "~1.9.1",
     "node": "^14.4.0"
+  },
+  "devDependencies": {
+    "html": "^1.0.0"
   }
 }

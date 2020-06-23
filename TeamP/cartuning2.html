@@ -1,0 +1,507 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/reserve.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css' />
+    <script src='//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js'></script>
+    <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <style>
+    * {
+    font-size: 11px;
+}
+
+body {
+    background-color: #00000;
+     font-family: "맑은고딕";
+     font-size: 12px;
+     color: #444444;
+}
+
+
+/* header */
+
+.header-nav-wrapper {
+    background: url(../images/bg_header.gif) repeat-x 0 0;
+    background-position: center;
+    background-size: contain;
+    height: 120px;
+    padding-top: 4px;
+}
+
+.header-nav-container {
+    position: fixed;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 150px;
+}
+
+.header-inner {
+    display: flex;
+}
+
+.header-inner>div {
+    border-right: 1px solid #DDDDDD;
+    margin-left: 8px;
+    padding-right: 4px;
+}
+
+
+/* //header */
+
+
+/* nav */
+
+.nav-line {
+    background-color: red;
+    border-radius: 50px;
+    height: 5px;
+    /* background-image: linear-gradient(to right, white 33%, rgba(255, 255, 255, 0) 0%);
+  background-position: bottom;
+  background-size: 15px 1px;
+  background-repeat: repeat-x; */
+}
+
+.nav-wrapper {
+    /* background: url(../images/bg_header.gif) repeat-x 0 0; */
+    /* width: 100%;*/
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-content {
+    padding-top: 15px;
+}
+
+.movieLogo-wrapper {
+    text-align: center;
+}
+
+.cgvLogo {
+    width: 120px;
+    margin-left: 150px;
+    /* margin-right: -40px; */
+}
+
+.cgvMovie {
+    width: auto;
+    height: 28px;
+}
+
+.nav-inner {
+    display: flex;
+    /* margin-left: -250px; */
+    margin-left: 150px;
+    margin-right: auto;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.nav-inner>div>button {
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.search-wrapper {
+    margin-left: 70px;
+    height: 20px;
+}
+
+.search-wrapper>input {
+    width: 100px;
+    height: 20px;
+}
+
+.searchButton {
+    margin: 0 !important;
+    padding: 2px !important;
+    background-color: red;
+    color: white;
+    width: 30px;
+    height: 100%;
+    font-size: 10px !important;
+}
+
+
+/* content */
+
+.reserve-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    height: 950px;
+    /* border: 1px solid #dddddd; */
+}
+
+.reserve-container>div {
+    border: 1px solid #dddddd;
+}
+
+.reserve-title {
+    border-bottom: 1px solid #dddddd;
+    background-color: #444444;
+    text-align: center;
+    color: #dddddd;
+    padding: 5px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.movie-part {
+    width: 284px;
+}
+
+.theater-part {
+    width: 264px;
+}
+
+.day-part {
+    width: 91px;
+}
+
+.time-part {
+    width: 100px;
+}
+
+.sort-wrapper {
+    margin: 10px 6px 6px 10px;
+    /* padding: 3px; */
+    display: flex;
+    border-bottom: 1px solid #dddddd;
+    font-size: 12px;
+}
+
+.sort-wrapper>div {
+    padding: 3px;
+}
+
+.sort-wrapper>div:hover {
+    border-bottom: 1px solid #111111;
+}
+
+.sort-selected {
+    font-weight: bold;
+    border-bottom: 1px solid #111111;
+}
+
+.sort-korean {
+    margin-left: 6px;
+}
+
+.reserve-date {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 770px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.movie-date-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 2px;
+}
+
+.movie-week-of-day {
+    margin-left: 5px;
+    font-size: 10px;
+    width: 12px;
+    height: 22px;
+    line-height: 22px;
+}
+
+.movie-day {
+    text-align: center;
+    width: 34px;
+    height: 22px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.saturday {
+    color: #31597E;
+    font-weight: bold;
+}
+
+.sunday {
+    color: #AF2D2D;
+    font-weight: bold;
+}
+
+.movie-date-wrapper-active {
+    background-color: #333333;
+}
+
+.movie-date-wrapper-active>* {
+    color: white;
+}
+
+.button {
+  background-color: #000000;
+  color: #FFFFFF;
+  float: right;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+
+#logo {
+    padding: 20px 0 0 580px;
+    float: none;
+}
+
+
+
+    </style>
+</head>
+
+<body>
+  <div id="logo">
+    <img src="logo.png">
+  </div>
+
+    <div class="reserve-container">
+        <div class="movie-part">
+            <div class="reserve-title">종류</div>
+            <div class="sort-wrapper">
+                <div class="sort-rate sort-selected">자동차 튜닝</div>
+                <div class="sort-korean">자동차 수리</div>
+                <div class="sort-korean">자동차 정비</div>
+            </div>
+            <button type="button" id="" class="btn btnEvent"
+            onmouseup="change2(this)" onmousedown="change1(this)" style="background-color:white;">
+            <img src="wheel.png" alt="btnImages" class="btnImages">
+            </button>
+            <p>
+            <button type="button" id="" class="btn btnEvent"
+            onmouseup="change2(this)" onmousedown="change1(this)" style="background-color:white;">
+            <img src="wrapping.png" alt="btnImages" class="btnImages">
+            </button>
+            <p>
+            <button type="button" id="" class="btn btnEvent"
+            onmouseup="change2(this)" onmousedown="change1(this)" style="background-color:white;">
+            <img src="audio.png" alt="btnImages" class="btnImages">
+            </button>
+            <p>
+            <button type="button" id="" class="btn btnEvent"
+            onmouseup="change2(this)" onmousedown="change1(this)" style="background-color:white;">
+            <img src="suspension.png" alt="btnImages" class="btnImages">
+            </button>
+            <p>
+            <button type="button" id="" class="btn btnEvent"
+            onmouseup="change2(this)" onmousedown="change1(this)" style="background-color:white;">
+            <img src="engine.png" alt="btnImages" class="btnImages">
+            </button>
+            <p>
+            <button type="button" id="" class="btn btnEvent"
+            onmouseup="change2(this)" onmousedown="change1(this)" style="background-color:white;">
+            <img src="etc.png" alt="btnImages" class="btnImages">
+            </button>
+
+        </div>
+        <div class="theater-part">
+            <div class="reserve-title">업체</div>
+            <div>
+
+              <input type="button" value="스타트카 튜닝"  onclick="change1(this)"
+              style="background: #80a727; border-radius: 17px; color: white;
+              font-family: 맑은고딕; font-size: 15px; font-weight: bold;
+              height:auto; padding:5px 0px 5px 5px; width:208px;
+              border-bottom:1px double gold;"></p>
+
+              <input type="button" value="현대튜닝"  onclick="change1(this)"
+              style="background: #80a727; border-radius: 17px; color: white;
+              font-family: 맑은고딕; font-size: 15px; font-weight: bold;
+              height:auto; padding:5px 0px 5px 5px; width:208px;
+              border-bottom:1px double gold;"></p>
+
+              <input type="button" value="레인보우튜닝샵"  onclick="change1(this)"
+              style="background: #80a727; border-radius: 17px; color: white;
+              font-family: 맑은고딕; font-size: 15px; font-weight: bold;
+              height:auto; padding:5px 0px 5px 5px; width:208px;
+              border-bottom:1px double gold;"></p>
+
+              <input type="button" value="JS카튜닝"  onclick="change1(this)"
+              style="background: #80a727; border-radius: 17px; color: white;
+              font-family: 맑은고딕; font-size: 15px; font-weight: bold;
+              height:auto; padding:5px 0px 5px 5px; width:208px;
+              border-bottom:1px double gold;"></p>
+
+              <input type="button" value="튜닝스타"  onclick="change1(this)"
+              style="background: #80a727; border-radius: 17px; color: white;
+              font-family: 맑은고딕; font-size: 15px; font-weight: bold;
+              height:auto; padding:5px 0px 5px 5px; width:208px;
+              border-bottom:1px double gold;"></p>
+
+              <input type="button" value="튜닝스토리"  onclick="change1(this)"
+              style="background: #80a727; border-radius: 17px; color: white;
+              font-family: 맑은고딕; font-size: 15px; font-weight: bold;
+              height:auto; padding:5px 0px 5px 5px; width:208px;
+              border-bottom:1px double gold;"></p>
+
+              <input type="button" value="튜닝스토어"  onclick="change1(this)"
+              style="background: #80a727; border-radius: 17px; color: white;
+              font-family: 맑은고딕; font-size: 15px; font-weight: bold;
+              height:auto; padding:5px 0px 5px 5px; width:208px;
+              border-bottom:1px double gold;"></p>
+
+
+              <input type="button" value="엠튜닝"  onclick="change1(this)"
+              style="background: #80a727; border-radius: 17px; color: white;
+              font-family: 맑은고딕; font-size: 15px; font-weight: bold;
+              height:auto; padding:5px 0px 5px 5px; width:208px;
+              border-bottom:1px double gold;"></p>
+
+
+
+          <input type="button" value="제이엠티에스"  onclick="change1(this)"
+          style="background: #80a727; border-radius: 17px; color: white;
+          font-family: 맑은고딕; font-size: 15px; font-weight: bold;
+          height:auto; padding:5px 0px 5px 5px; width:208px;
+          border-bottom:1px double gold;"></p>
+
+          <input type="button" value="트레스업"  onclick="change1(this)"
+          style="background: #80a727; border-radius: 17px; color: white;
+          font-family: 맑은고딕; font-size: 15px; font-weight: bold;
+          height:auto; padding:5px 0px 5px 5px; width:208px;
+          border-bottom:1px double gold;"></p>
+
+          <input type="button" value="열차단썬팅샵"  onclick="change1(this)"
+          style="background: #80a727; border-radius: 17px; color: white;
+          font-family: 맑은고딕; font-size: 15px; font-weight: bold;
+          height:auto; padding:5px 0px 5px 5px; width:208px;
+          border-bottom:1px double gold;"></p>
+
+
+          <input type="button" value="에어스핀"  onclick="change1(this)"
+          style="background: #80a727; border-radius: 17px; color: white;
+          font-family: 맑은고딕; font-size: 15px; font-weight: bold;
+          height:auto; padding:5px 0px 5px 5px; width:208px;
+          border-bottom:1px double gold;"><br>
+
+
+
+          <script language="JavaScript">
+<!--
+    function change1(obj){
+        obj.style.background = 'pink';
+        obj.style.color = 'white';
+    }
+
+    function change2(obj){
+        obj.style.background = 'pink';
+        obj.style.color = 'white';
+    }
+//-->
+</script>
+
+
+            </div>
+
+        </div>
+        <div class="day-part">
+            <div class="reserve-title">날짜</div>
+            <div class="reserve-date"></div>
+        </div>
+        <div class="time-part">
+            <div class="reserve-title">시간</div>
+            <input type='button' value='09:00' onclick='alert("예약이 접수됐습니다.")'/
+            onmouseup="change2(this)" onmousedown="change1(this)" style="background-color:white;">
+          </p>
+            <input type='button' value='10:00' onclick='alert("예약이 접수됐습니다.")'/
+            onmouseup="change2(this)" onmousedown="change1(this)" style="background-color:white;">
+            </p><input type='button' value='11:00' onclick='alert("예약이 접수됐습니다.")'/
+            onmouseup="change2(this)" onmousedown="change1(this)" style="background-color:white;">
+            </p><input type='button' value='13:00' onclick='alert("예약이 접수됐습니다.")'/
+            onmouseup="change2(this)" onmousedown="change1(this)" style="background-color:white;">
+            </p><input type='button' value='14:00' onclick='alert("예약이 접수됐습니다.")'/
+            onmouseup="change2(this)" onmousedown="change1(this)" style="background-color:white;">
+            </p><input type='button' value='15:00' onclick='alert("예약이 접수됐습니다.")'/
+            onmouseup="change2(this)" onmousedown="change1(this)" style="background-color:white;">
+            </p><input type='button' value='16:00' onclick='alert("예약이 접수됐습니다.")'/
+            onmouseup="change2(this)" onmousedown="change1(this)" style="background-color:white;">
+            </p><input type='button' value='17:00' onclick='alert("예약이 접수됐습니다.")'/
+            onmouseup="change2(this)" onmousedown="change1(this)" style="background-color:white;">
+            </p><input type='button' value='18:00' onclick='alert("예약이 접수됐습니다.")'/
+            onmouseup="change2(this)" onmousedown="change1(this)" style="background-color:white;">
+
+
+            </div>
+
+    </div>
+    <script>
+        const date = new Date();
+        // console.log(date.getFullYear());
+        const lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
+        const reserveDate = document.querySelector(".reserve-date");
+
+
+            const weekOfDay = ["일", "월", "화", "수", "목", "금", "토"]
+            const year = date.getFullYear();
+            const month = date.getMonth();
+            for (i = date.getDate(); i <= lastDay.getDate(); i++) {
+
+                const button = document.createElement("button");
+                const spanWeekOfDay = document.createElement("span");
+                const spanDay = document.createElement("span");
+
+                //class넣기
+                button.classList = "movie-date-wrapper"
+                spanWeekOfDay.classList = "movie-week-of-day";
+                spanDay.classList = "movie-day";
+
+                //weekOfDay[new Date(2020-03-날짜)]
+                const dayOfWeek = weekOfDay[new Date(year + "-" + month + "-" + i).getDay()];
+
+                //요일 넣기
+                if (dayOfWeek === "토") {
+                    spanWeekOfDay.classList.add("saturday");
+                    spanDay.classList.add("saturday");
+                } else if (dayOfWeek === "일") {
+                    spanWeekOfDay.classList.add("sunday");
+                    spanDay.classList.add("sunday");
+                }
+                spanWeekOfDay.innerHTML = dayOfWeek;
+                button.append(spanWeekOfDay);
+                //날짜 넣기
+                spanDay.innerHTML = i;
+                button.append(spanDay);
+                //button.append(i);
+                reserveDate.append(button);
+
+                dayClickEvent(button);
+            }
+
+
+
+
+        function dayClickEvent(button) {
+            button.addEventListener("click", function() {
+                const movieDateWrapperActive = document.querySelectorAll(".movie-date-wrapper-active");
+                movieDateWrapperActive.forEach((list) => {
+                    list.classList.remove("movie-date-wrapper-active");
+                })
+                button.classList.add("movie-date-wrapper-active");
+            })
+        }
+    </script>
+</body>
+
+</html>

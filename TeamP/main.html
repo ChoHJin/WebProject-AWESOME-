@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <meta charset="utf-8">
+ <style>
+ * {
+     margin: 0;
+     padding: 0;
+ }
+ body {
+     background-color: #00000;
+     font-family: "맑은고딕";
+     font-size: 12px;
+     color: #444444;
+ }
+ ul {
+     list-style-type: none;
+ }
+
+
+ .clear {
+     clear: both;
+ }
+ #logo {
+     padding: 20px 0 0 30px;
+     float: left;
+ }
+ #top_menu {
+   color:#80a727;
+     margin: 40px 10px 0 0;
+     float: right;
+ }
+ #top_menu li {
+     display: inline;
+ }
+ #main_menu {
+     font-size: 12px;
+     color: #ffffff;
+     background-color: #4e4c4d;
+     margin-top: 15px;
+     padding: 12px;
+     text-align: center;
+ }
+ #main_menu li {
+     padding: 0 20px 0 20px;
+     display: inline;
+ }
+ #new h3 {
+      padding-bottom:5px;
+      border-bottom:solid 2px #9bc32a;
+  }
+
+
+
+  #new h3 span{
+      color:#80a727;
+  }
+  #new .item{
+      float:left;
+      margin-top:20px;
+      text-align:center;
+  }
+  #new .subject{
+      margin-top:10px;
+      color:#80a727;
+  }
+  #new .comment{
+      margin-top:5px;
+      color:#888888;
+  }
+  #new .price{
+      margin-top:5px;
+      color:#ff0000;
+      font-weight:bold;
+  }
+
+
+
+ </style>
+
+ <style type="text/css">
+ a:link { text-decoration: none;}
+ a:visited {text-decoration: none;}
+ a:hover {text-decoration: underline;}
+</style>
+
+
+ <script>
+$(function(){
+$(“#includedContent”).load(“test1.html”);
+});
+</script>
+
+
+
+
+ </head>
+ <body>
+   <div id="logo">
+     <img src="logo.png">
+   </div>
+   <ul id="top_menu">
+     <li> 로그인 |</li>
+     <li> 회원가입 |</li>
+     <li> 마이페이지 |</li>
+     <li> 리뷰 남기기 |</li>
+     <li> 이용안내 |</li>
+     <li> 고객센터</li>
+   </ul>
+
+   <div class="clear"></div>
+
+   <ul id="main_menu">
+     <li onClick="location.href='carauto2.html'" > <a>자동차 정기검사 예약</a></li>
+     <li onClick="location.href='carcenter2.html'" > <a>자동차 수리 예약</a> </li>
+     <li onClick="location.href='cartuning2.html'"> <a>자동차 튜닝 예약</a> </li>
+     <li>자동차 게시판</li>
+     <li>튜닝 갤러리</li>
+   </ul>
+
+   <div id="new">
+         <h3><span>Hot</span>지역 best 센터</h3>
+         <ul class="item">
+           <li><img src="cc1.jpeg" width="300px" height="300px" ></li>
+           <li class="subject">1등 명진 공업사</li>
+           <li class="comment">정기검진/종합검진 (소형차기준)</li>
+           <li class="price">25,000원</li>
+           <button type="button" class="navyBtn" onClick="location.href='carauto2.html'">예약하기 </button>
+           <li ><a href="https://goo.gl/maps/v6JKWLjMe9jcu5e68" target="_blank">지도보기</a></li>
+           </ul>
+
+           <ul class="item">
+             <li><img src="cc4.jpeg" width="300px" height="300px"></li>
+             <li class="subject">호랑이 카센터</li>
+             <li class="comment">모든 수리 가능</li>
+             <li class="price">견적문의</li>
+             <button type="button" class="navyBtn" onClick="location.href='carcenter2.html'">예약하기 </button>
+             <li ><a href="https://www.daum.net" target="_blank">지도보기</a></li>
+
+         </ul>
+
+         <ul class="item">
+           <li><img src="ct1.png" width="300px" height="300px"></li>
+           <li class="subject">청주 제일 튜닝샵</li>
+           <li class="comment">e클래스 기준 </li>
+           <li class="price">8,999,000원</li>
+           <button type="button" class="navyBtn" onClick="location.href='cartuning2.html'">예약하기 </button>
+           <li ><a href="https://goo.gl/maps/hU4VP8BpGzQtjM1t7" target="_blank">지도보기</a></li>
+         </ul>
+
+       <div class="clear"></div>
+
+         <ul class="item">
+           <li><img src="ct2.jpeg" width="300px" height="300px"></li>
+           <li class="subject">차멋쟁이 튜닝샵</li>
+           <li class="comment">부분 도색 (색상 선택가능)</li>
+           <li class="price">500,000원</li>
+           <button type="button" class="navyBtn" onClick="location.href='cartuning2.html'">예약하기 </button>
+           <li ><a href="https://goo.gl/maps/nvbEyCjnpzxUMWsm8" target="_blank">지도보기</a></li>
+         </ul>
+         <ul class="item">
+           <li><img src="cc3.jpeg" width="300px" height="300px"></li>
+           <li class="subject">포유 모터스</li>
+           <li class="comment">정기검진/종합검진 (소형차기준)</li>
+           <li class="price">23,000원</li>
+           <button type="button" class="navyBtn" onClick="location.href='carcenter2.html'">예약하기 </button>
+           <li ><a href="https://goo.gl/maps/ckYZu8zGL7vm59zq5" target="_blank">지도보기</a></li>
+         </ul>
+
+       <ul class="item">
+         <li><img src="cc2.jpeg" width="300px" height="300px"></li>
+         <li class="subject">청주 차사랑 공업사</li>
+         <li class="comment">정기검진/종합검진 (소형차기준)</li>
+         <li class="price">20,000원</li>
+         <button type="button" class="navyBtn" onClick="location.href='carauto2.html'">예약하기 </button>
+         <li ><a href="https://goo.gl/maps/zKoujbKZza5vWxaV8" target="_blank">지도보기</a></li>
+         </ul>
+
+       </div> <!-- new -->
+
+<div>
+</br>
+</br>
+
+</hr>
+</br>
+</br>
+</br>
+</br>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+</br>
+  <div id="map" style="width:600px; height: 300px"></div>
+
+  <script>
+  function myMap() {
+    var mapCanvas = document.getElementById("map");
+    var myCenter = new google.maps.LatLng(36.637909, 127.508316);
+    var mapOptions = {
+    	center: myCenter,
+      zoom: 17
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+
+
+    var marker = new google.maps.Marker({
+  	position:myCenter,
+    animation: google.maps.Animation.DROP,
+  icon: 'carimg2.png'
+    });
+    marker.setMap(map);
+
+    var infowindow = new google.maps.InfoWindow({
+      content: "CarCenter"
+    });
+    infowindow.open(map,marker);
+
+
+  }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAlOjojzJqN5CEy7iGWtTTiWgCMiPUhXI&callback=myMap"></script>
+	</script>
+
+<h1> 내 위치에서 인접한 센터 찾기 </h1>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25611.177183959186!2d127.48856397975041!3d36.64089528418372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565280a29786d13%3A0x3bf90c902a914352!2z6rWQ7Ya17JWI7KCE6rO164uoIOy2qeu2geyngOyCrA!5e0!3m2!1sko!2skr!4v1592223525000!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+<h1> 카센터 </h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25611.177183959186!2d127.48856397975041!3d36.64089528418372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8904ba6c923812a9!2z6rG07YOc6rO17JeF7IKs!5e0!3m2!1sko!2skr!4v1592223651030!5m2!1sko!2skr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+ </body>
+ </html>
